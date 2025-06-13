@@ -31,12 +31,15 @@ class AutocompleteEntry(tk.Frame):
             self,
             textvariable=self.var,
             font=('Arial', 14),
-            bg='white',
-            fg='black',
+            bg='#cccccc',
+            fg='#222222',
             insertbackground='blue',  # Cursor color - more visible
             insertwidth=3,  # Wider cursor
             relief='solid',
             borderwidth=2,
+            highlightbackground='#003a70',
+            highlightcolor='#003a70',
+            highlightthickness=2,
             **kwargs
         )
         self.entry.pack(fill='x')
@@ -46,8 +49,8 @@ class AutocompleteEntry(tk.Frame):
             self,
             height=8,
             font=('Arial', 12),
-            bg='white',
-            fg='black',
+            bg='#cccccc',
+            fg='#222222',
             selectbackground='#3d7dca',
             selectforeground='white',
             relief='solid',
@@ -61,6 +64,7 @@ class AutocompleteEntry(tk.Frame):
         self.entry.bind('<Tab>', self.on_tab)
         self.entry.bind('<FocusIn>', self.on_focus_in)
         self.entry.bind('<FocusOut>', self.on_focus_out)
+        self.entry.bind('<KeyPress>', self.on_key_press)  # Track typing
         
         self.listbox.bind('<Button-1>', self.on_select)
         self.listbox.bind('<ButtonRelease-1>', self.on_select)  # Also handle release
@@ -70,6 +74,7 @@ class AutocompleteEntry(tk.Frame):
         
         self.suggestions_visible = False
         self.selecting_from_list = False
+        self.selection_made = False  # Track if user made a selection
     
     def fuzzy_search(self, query, items):
         """
@@ -110,6 +115,10 @@ class AutocompleteEntry(tk.Frame):
         """Handle text changes in the entry widget"""
         if self.selecting_from_list:
             return
+        
+        # Don't show suggestions if user made a selection and hasn't typed since
+        if self.selection_made:
+            return
             
         query = self.var.get()
         matches = self.fuzzy_search(query, self.values)
@@ -118,6 +127,11 @@ class AutocompleteEntry(tk.Frame):
             self.show_suggestions(matches)
         else:
             self.hide_suggestions()
+    
+    def on_key_press(self, event):
+        """Handle key press events to detect typing"""
+        # User is typing, reset selection flag
+        self.selection_made = False
     
     def show_suggestions(self, matches):
         """Show the suggestions listbox with matching items"""
@@ -137,14 +151,14 @@ class AutocompleteEntry(tk.Frame):
     
     def on_focus_in(self, event):
         """Handle entry gaining focus"""
-        self.entry.configure(relief='solid', borderwidth=3, highlightbackground='#3d7dca', bg='#f0f8ff')
+        self.entry.configure(relief='solid', borderwidth=3, highlightbackground='#003a70', bg='#cccccc')
         # Show suggestions if there's text
         if self.var.get():
             self.on_text_changed()
     
     def on_focus_out(self, event):
         """Handle entry losing focus"""
-        self.entry.configure(relief='solid', borderwidth=1, highlightbackground='#cccccc', bg='white')
+        self.entry.configure(relief='solid', borderwidth=1, highlightbackground='#003a70', bg='#cccccc')
         # Delay hiding to allow for mouse clicks on listbox
         self.after(200, self.check_and_hide_suggestions)
     
@@ -217,6 +231,7 @@ class AutocompleteEntry(tk.Frame):
             self.selecting_from_list = True
             self.var.set(selected_item)
             self.selecting_from_list = False
+            self.selection_made = True  # Mark that selection was made
             self.hide_suggestions()
             self.entry.focus_set()
             # Move cursor to end
@@ -336,7 +351,7 @@ class PokemonGuessGame:
         
         # Start with a regular sized window for debugging
         self.root.geometry("1000x700")
-        self.root.configure(bg='#E3F2FD')
+        self.root.configure(bg='#3d7dca')
         
         # Center the window
         self.root.update_idletasks()
@@ -359,7 +374,7 @@ class PokemonGuessGame:
         self.clear_screen()
         
         # Main container
-        container = tk.Frame(self.root, bg='#E3F2FD')
+        container = tk.Frame(self.root, bg='#3d7dca')
         container.pack(expand=True, fill='both')
         
         # Title
@@ -367,18 +382,23 @@ class PokemonGuessGame:
             container,
             text="Who's Your Pokémon!",
             font=('Arial', 48, 'bold'),
-            fg='#1565C0',
-            bg='#E3F2FD'
+            fg='#003a70',
+            bg='#3d7dca'
         )
         title_label.pack(pady=(100, 50))
         
-        # Start button
+        # Start button with rounded corners
         start_button = tk.Button(
             container,
             text="Start",
             font=('Arial', 24, 'bold'),
-            bg='#3d7dca',
-            fg='white',
+            bg='#ffcb05',
+            fg='#222222',
+            highlightbackground='#222222',
+            highlightcolor='#222222',
+            highlightthickness=2,
+            relief='solid',
+            borderwidth=2,
             padx=50,
             pady=20,
             command=self.start_game,
@@ -395,7 +415,7 @@ class PokemonGuessGame:
         self.clear_screen()
         
         # Main container
-        container = tk.Frame(self.root, bg='#E3F2FD')
+        container = tk.Frame(self.root, bg='#3d7dca')
         container.pack(expand=True, fill='both')
         
         # Title
@@ -403,8 +423,8 @@ class PokemonGuessGame:
             container,
             text=f"Player {player_num} Setup",
             font=('Arial', 36, 'bold'),
-            fg='#1565C0',
-            bg='#E3F2FD'
+            fg='#003a70',
+            bg='#3d7dca'
         )
         title_label.pack(pady=(50, 30))
         
@@ -413,7 +433,8 @@ class PokemonGuessGame:
             container,
             text="Enter your name:",
             font=('Arial', 18),
-            bg='#E3F2FD'
+            fg='#222222',
+            bg='#3d7dca'
         )
         name_label.pack(pady=10)
         
@@ -422,8 +443,13 @@ class PokemonGuessGame:
             font=('Arial', 16),
             width=20,
             justify='center',
-            bg='white',
-            fg='black'
+            bg='#cccccc',
+            fg='#222222',
+            relief='solid',
+            borderwidth=2,
+            highlightbackground='#003a70',
+            highlightcolor='#003a70',
+            highlightthickness=2
         )
         name_entry.pack(pady=10)
         name_entry.focus()
@@ -433,7 +459,8 @@ class PokemonGuessGame:
             container,
             text="Choose your Pokémon (start typing to search):",
             font=('Arial', 18),
-            bg='#E3F2FD'
+            fg='#222222',
+            bg='#3d7dca'
         )
         pokemon_label.pack(pady=(30, 10))
         
@@ -476,8 +503,13 @@ class PokemonGuessGame:
             container,
             text="I Choose You!",
             font=('Arial', 18, 'bold'),
-            bg='#3d7dca',
-            fg='white',
+            bg='#ffcb05',
+            fg='#222222',
+            highlightbackground='#222222',
+            highlightcolor='#222222',
+            highlightthickness=2,
+            relief='solid',
+            borderwidth=2,
             padx=30,
             pady=15,
             command=submit_player,
@@ -497,36 +529,38 @@ class PokemonGuessGame:
         self.generate_grids()
         
         # Main container
-        self.main_frame = tk.Frame(self.root, bg='#E3F2FD')
+        self.main_frame = tk.Frame(self.root, bg='#3d7dca')
         self.main_frame.pack(expand=True, fill='both', padx=10, pady=10)
         
-        # Title
+        # Title with increased font size (18 -> 22.5, rounded to 22)
         title_label = tk.Label(
             self.main_frame,
             text="Who's Your Pokémon!",
-            font=('Arial', 18, 'bold'),
-            fg='#1565C0',
-            bg='#E3F2FD'
+            font=('Arial', 22, 'bold'),
+            fg='#003a70',
+            bg='#3d7dca'
         )
         title_label.pack(pady=(0, 10))
         
         # Create horizontal layout using pack with equal distribution
-        game_frame = tk.Frame(self.main_frame, bg='#E3F2FD')
+        game_frame = tk.Frame(self.main_frame, bg='#3d7dca')
         game_frame.pack(expand=True, fill='both')
         
         # Player 1 side (LEFT) - force exactly half width
-        player1_frame = tk.Frame(game_frame, bg='#E3F2FD', width=400)
+        player1_frame = tk.Frame(game_frame, bg='#3d7dca', width=400)
         player1_frame.pack(side='left', expand=True, fill='both', padx=(0, 2))
         player1_frame.pack_propagate(False)  # Maintain width
         
+        # Remove "(Player 1)" suffix and increase font size by 25% (14 -> 17.5, rounded to 18)
         self.player1_name_label = tk.Label(
             player1_frame,
-            text=f"{self.player1_name} (Player 1)",
-            font=('Arial', 14, 'bold'),
+            text=f"{self.player1_name}",
+            font=('Arial', 18, 'bold'),
             bg='lightgreen',
             relief='solid',
             borderwidth=2,
-            pady=5
+            padx=10,
+            pady=15
         )
         self.player1_name_label.pack(pady=(0, 5))
         
@@ -534,38 +568,35 @@ class PokemonGuessGame:
             player1_frame,
             text="Remaining: 24",
             font=('Arial', 11),
-            bg='#E3F2FD'
+            bg='#3d7dca'
         )
         self.player1_remaining_label.pack(pady=(0, 5))
         
-        # Player 1 grid with visible border
-        p1_grid_container = tk.Frame(player1_frame, bg='red', relief='solid', borderwidth=3)
+        # Player 1 grid container - remove red border
+        p1_grid_container = tk.Frame(player1_frame, bg='#3d7dca', relief='solid', borderwidth=1)
         p1_grid_container.pack(expand=True, fill='both', pady=(0, 10))
         
-        p1_grid_frame = tk.Frame(p1_grid_container, bg='#E3F2FD')
+        p1_grid_frame = tk.Frame(p1_grid_container, bg='#3d7dca')
         p1_grid_frame.pack(expand=True, fill='both', padx=3, pady=3)
         
         print("About to create Player 1 grid...")
         self.create_grid(p1_grid_frame, 1)
         
-        # DIVIDER - fixed width
-        divider = tk.Frame(game_frame, bg='blue', width=6)
-        divider.pack(side='left', fill='y', padx=0)
-        divider.pack_propagate(False)  # Maintain width
-        
         # Player 2 side (RIGHT) - force exactly half width
-        player2_frame = tk.Frame(game_frame, bg='#E3F2FD', width=400)
+        player2_frame = tk.Frame(game_frame, bg='#3d7dca', width=400)
         player2_frame.pack(side='left', expand=True, fill='both', padx=(2, 0))
         player2_frame.pack_propagate(False)  # Maintain width
         
+        # Remove "(Player 2)" suffix and increase font size by 25%
         self.player2_name_label = tk.Label(
             player2_frame,
-            text=f"{self.player2_name} (Player 2)",
-            font=('Arial', 14, 'bold'),
+            text=f"{self.player2_name}",
+            font=('Arial', 18, 'bold'),
             bg='lightcoral',
             relief='solid',
             borderwidth=2,
-            pady=5
+            padx=10,
+            pady=15
         )
         self.player2_name_label.pack(pady=(0, 5))
         
@@ -573,30 +604,35 @@ class PokemonGuessGame:
             player2_frame,
             text="Remaining: 24",
             font=('Arial', 11),
-            bg='#E3F2FD'
+            bg='#3d7dca'
         )
         self.player2_remaining_label.pack(pady=(0, 5))
         
-        # Player 2 grid with visible border
-        p2_grid_container = tk.Frame(player2_frame, bg='red', relief='solid', borderwidth=3)
+        # Player 2 grid container - remove red border
+        p2_grid_container = tk.Frame(player2_frame, bg='#3d7dca', relief='solid', borderwidth=1)
         p2_grid_container.pack(expand=True, fill='both', pady=(0, 10))
         
-        p2_grid_frame = tk.Frame(p2_grid_container, bg='#E3F2FD')
+        p2_grid_frame = tk.Frame(p2_grid_container, bg='#3d7dca')
         p2_grid_frame.pack(expand=True, fill='both', padx=3, pady=3)
         
         print("About to create Player 2 grid...")
         self.create_grid(p2_grid_frame, 2)
         
         # Control buttons at the bottom
-        control_frame = tk.Frame(self.main_frame, bg='#E3F2FD')
+        control_frame = tk.Frame(self.main_frame, bg='#3d7dca')
         control_frame.pack(pady=10)
         
         self.end_turn_button = tk.Button(
             control_frame,
             text="End Turn",
             font=('Arial', 12, 'bold'),
-            bg='#3d7dca',
-            fg='white',
+            bg='#ffcb05',
+            fg='#222222',
+            highlightbackground='#222222',
+            highlightcolor='#222222',
+            highlightthickness=2,
+            relief='solid',
+            borderwidth=2,
             padx=20,
             pady=5,
             command=self.end_turn
@@ -607,8 +643,13 @@ class PokemonGuessGame:
             control_frame,
             text="Make Guess",
             font=('Arial', 12, 'bold'),
-            bg='#3d7dca',
-            fg='white',
+            bg='#ffcb05',
+            fg='#222222',
+            highlightbackground='#222222',
+            highlightcolor='#222222',
+            highlightthickness=2,
+            relief='solid',
+            borderwidth=2,
             padx=20,
             pady=5,
             command=self.make_guess
@@ -661,9 +702,8 @@ class PokemonGuessGame:
         # Debug print to ensure this method is called
         print(f"Creating grid for player {player} with {len(grid_data)} Pokemon")
         
-        # Fixed button size for uniform grid - using pixels for absolute control
-        button_width = 80
-        button_height = 80
+        # Fixed button size for uniform grid
+        button_size = 80
         
         for row in range(4):
             button_row = []
@@ -685,29 +725,26 @@ class PokemonGuessGame:
                         command=lambda p=pokemon_name, pl=player: self.toggle_pokemon(p, pl)
                     )
                     
-                    # Configure button to maintain FIXED size regardless of content
-                    button.configure(
-                        width=10,  # Character width for text mode
-                        height=4,  # Character height for text mode  
-                        font=('Arial', 7, 'bold'),
-                        anchor='center',
-                        justify='center'
-                    )
-                    
                     # Set image if available, otherwise use text with wrapping
                     if sprite_image:
                         button.configure(
                             image=sprite_image,
                             text="",
-                            compound='center'
+                            compound='center',
+                            width=button_size,
+                            height=button_size
                         )
                         # Keep a reference to prevent garbage collection
                         button.image = sprite_image
                     else:
                         button.configure(
                             text=pokemon_name,
-                            wraplength=button_width - 10,
-                            compound='center'
+                            font=('Arial', 7, 'bold'),
+                            wraplength=button_size - 10,
+                            justify='center',
+                            compound='center',
+                            width=button_size,
+                            height=button_size
                         )
                     
                     button.grid(row=row, column=col, padx=2, pady=2, sticky='')
@@ -719,9 +756,9 @@ class PokemonGuessGame:
         
         # Configure grid weights for uniform distribution with minimum sizes
         for i in range(4):
-            parent.grid_rowconfigure(i, weight=1, minsize=button_height + 4, uniform="row")
+            parent.grid_rowconfigure(i, weight=1, minsize=button_size + 4, uniform="row")
         for i in range(6):
-            parent.grid_columnconfigure(i, weight=1, minsize=button_width + 4, uniform="col")
+            parent.grid_columnconfigure(i, weight=1, minsize=button_size + 4, uniform="col")
         
         # Store the button references
         if player == 1:
@@ -769,27 +806,28 @@ class PokemonGuessGame:
             button.configure(
                 bg='#FFFFFF',
                 fg='#333333',
-                relief='raised',
-                width=10,  # Fixed character width
-                height=4,  # Fixed character height
-                font=('Arial', 7, 'bold'),
-                anchor='center',
-                justify='center'
+                relief='raised'
             )
             
             if sprite_image:
                 button.configure(
                     image=sprite_image,
                     text="",
-                    compound='center'
+                    compound='center',
+                    width=80,
+                    height=80
                 )
                 button.image = sprite_image
             else:
                 button.configure(
                     text=pokemon,
                     image="",
+                    font=('Arial', 7, 'bold'),
                     wraplength=70,
-                    compound='center'
+                    justify='center',
+                    compound='center',
+                    width=80,
+                    height=80
                 )
         else:
             # Add elimination - show X icon or red X text
@@ -797,12 +835,7 @@ class PokemonGuessGame:
             button.configure(
                 bg='#F44336',
                 fg='white',
-                relief='sunken',
-                width=10,  # Fixed character width
-                height=4,  # Fixed character height
-                font=('Arial', 7, 'bold'),
-                anchor='center',
-                justify='center'
+                relief='sunken'
             )
             
             if self.x_icon:
@@ -810,7 +843,9 @@ class PokemonGuessGame:
                 button.configure(
                     image=self.x_icon,
                     text="",
-                    compound='center'
+                    compound='center',
+                    width=80,
+                    height=80
                 )
                 button.image = self.x_icon
             else:
@@ -819,7 +854,9 @@ class PokemonGuessGame:
                     text='X',
                     image="",
                     font=('Arial', 20, 'bold'),
-                    compound='center'
+                    compound='center',
+                    width=80,
+                    height=80
                 )
         
         self.update_remaining_count()
@@ -868,11 +905,16 @@ class PokemonGuessGame:
         current_player_name = self.player1_name if self.current_player == 1 else self.player2_name
         opponent_chosen = self.player2_chosen if self.current_player == 1 else self.player1_chosen
         
+        # Get non-eliminated Pokemon from opponent's grid
+        opponent_grid = self.player2_grid if self.current_player == 1 else self.player1_grid
+        opponent_eliminated = self.player2_eliminated if self.current_player == 1 else self.player1_eliminated
+        available_pokemon = [pokemon for pokemon in opponent_grid if pokemon not in opponent_eliminated]
+        
         # Create guess dialog
         dialog = tk.Toplevel(self.root)
         dialog.title("Make a Guess")
-        dialog.geometry("300x200")
-        dialog.configure(bg='#E3F2FD')
+        dialog.geometry("350x250")
+        dialog.configure(bg='#3d7dca')
         dialog.transient(self.root)
         dialog.grab_set()
         
@@ -884,28 +926,39 @@ class PokemonGuessGame:
         
         tk.Label(
             dialog,
-            text="Guess your opponent's Pokémon (start typing):",
+            text="Guess your opponent's Pokémon:",
             font=('Arial', 14),
-            bg='#E3F2FD'
+            fg='#222222',
+            bg='#3d7dca'
         ).pack(pady=20)
         
-        # Autocomplete entry for guess
-        guess_autocomplete = AutocompleteEntry(
+        # Regular dropdown with only available Pokemon
+        guess_var = tk.StringVar()
+        guess_dropdown = ttk.Combobox(
             dialog,
-            values=self.pokemon_list,
+            textvariable=guess_var,
+            values=sorted(available_pokemon),
+            state="readonly",
+            font=('Arial', 12),
             width=25
         )
-        guess_autocomplete.pack(pady=10)
+        
+        # Style the combobox to match our color scheme
+        style = ttk.Style()
+        style.configure('Custom.TCombobox',
+                       fieldbackground='#cccccc',
+                       background='#cccccc',
+                       foreground='#222222',
+                       borderwidth=2,
+                       relief='solid')
+        
+        guess_dropdown.configure(style='Custom.TCombobox')
+        guess_dropdown.pack(pady=10)
         
         def submit_guess():
-            guess = guess_autocomplete.get().strip()
+            guess = guess_var.get().strip()
             if not guess:
                 messagebox.showerror("Error", "Please select a Pokémon!")
-                return
-            
-            # Validate that the guess is a valid Pokemon
-            if guess not in self.pokemon_list:
-                messagebox.showerror("Error", f"'{guess}' is not a valid Pokémon. Please select from the suggestions.")
                 return
             
             dialog.destroy()
@@ -919,8 +972,13 @@ class PokemonGuessGame:
             dialog,
             text="Submit Guess",
             font=('Arial', 12, 'bold'),
-            bg='#3d7dca',
-            fg='white',
+            bg='#ffcb05',
+            fg='#222222',
+            highlightbackground='#222222',
+            highlightcolor='#222222',
+            highlightthickness=2,
+            relief='solid',
+            borderwidth=2,
             command=submit_guess,
             cursor='hand2'
         ).pack(pady=20)
@@ -931,7 +989,7 @@ class PokemonGuessGame:
         self.clear_screen()
         
         # Main container
-        container = tk.Frame(self.root, bg='#E3F2FD')
+        container = tk.Frame(self.root, bg='#3d7dca')
         container.pack(expand=True, fill='both')
         
         # Result
@@ -940,7 +998,7 @@ class PokemonGuessGame:
             text=result,
             font=('Arial', 48, 'bold'),
             fg='#4CAF50' if 'Wins' in result else '#F44336',
-            bg='#E3F2FD'
+            bg='#3d7dca'
         )
         result_label.pack(pady=(100, 20))
         
@@ -949,8 +1007,8 @@ class PokemonGuessGame:
             container,
             text=message,
             font=('Arial', 18),
-            fg='#333',
-            bg='#E3F2FD'
+            fg='#222222',
+            bg='#3d7dca'
         )
         message_label.pack(pady=20)
         
@@ -959,8 +1017,13 @@ class PokemonGuessGame:
             container,
             text="New Game",
             font=('Arial', 20, 'bold'),
-            bg='#3d7dca',
-            fg='white',
+            bg='#ffcb05',
+            fg='#222222',
+            highlightbackground='#222222',
+            highlightcolor='#222222',
+            highlightthickness=2,
+            relief='solid',
+            borderwidth=2,
             padx=40,
             pady=15,
             command=self.new_game,

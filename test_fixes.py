@@ -18,7 +18,7 @@ def test_fixes():
     root = tk.Tk()
     root.title("Fix Verification Test")
     root.geometry("500x400")
-    root.configure(bg='#E3F2FD')
+    root.configure(bg='#3d7dca')
     
     # Test data
     pokemon_names = [
@@ -33,8 +33,8 @@ def test_fixes():
         root,
         text="Autocomplete & Grid Button Fix Test",
         font=('Arial', 16, 'bold'),
-        fg='#1565C0',
-        bg='#E3F2FD'
+        fg='#003a70',
+        bg='#3d7dca'
     )
     title_label.pack(pady=20)
     
@@ -43,7 +43,8 @@ def test_fixes():
         root,
         text="Test 1: Autocomplete should show cursor and highlight on focus",
         font=('Arial', 12),
-        bg='#E3F2FD'
+        fg='#222222',
+        bg='#3d7dca'
     )
     test1_label.pack(pady=(20, 5))
     
@@ -112,8 +113,8 @@ def test_fixes():
                 fg='#333333',
                 relief='raised',
                 borderwidth=1,
-                width=10,  # Fixed character width
-                height=4,  # Fixed character height
+                width=80,  # Fixed pixel width
+                height=80,  # Fixed pixel height
                 font=('Arial', 7, 'bold'),
                 anchor='center',
                 text=f"Btn{i}{j}",
@@ -140,8 +141,8 @@ def test_fixes():
                 bg='#F44336',
                 fg='white',
                 font=('Arial', 20, 'bold'),
-                width=10,  # Keep same size
-                height=4   # Keep same size
+                width=80,  # Keep same size
+                height=80   # Keep same size
             )
         else:
             # Change back to original
@@ -150,8 +151,8 @@ def test_fixes():
                 bg='#FFFFFF',
                 fg='#333333',
                 font=('Arial', 7, 'bold'),
-                width=10,  # Keep same size
-                height=4   # Keep same size
+                width=80,  # Keep same size
+                height=80   # Keep same size
             )
     
     # Instructions
