@@ -13,6 +13,17 @@ import requests
 from PIL import Image, ImageTk
 from io import BytesIO
 import os
+import sys
+
+def get_resource_path(relative_path):
+    """Get absolute path to resource, works for dev and for PyInstaller"""
+    try:
+        # PyInstaller creates a temp folder and stores path in _MEIPASS
+        base_path = sys._MEIPASS
+    except Exception:
+        base_path = os.path.abspath(".")
+    
+    return os.path.join(base_path, relative_path)
 
 
 class AutocompleteEntry(tk.Frame):
@@ -260,7 +271,7 @@ class PokemonGuessGame:
         # Image cache for sprites
         self.image_cache = {}
         self.x_icon = None  # Will store the X icon image
-        self.image_size = (70, 70)  # Size for grid images
+        self.image_size = (96, 96)  # Size for grid images
         
         # Game state
         self.player1_name = ""
@@ -291,7 +302,7 @@ class PokemonGuessGame:
     def load_pokemon_data(self):
         """Load Pokémon data from the JSON file"""
         try:
-            with open('pokemon_data.json', 'r', encoding='utf-8') as f:
+            with open(get_resource_path('pokemon_data.json'), 'r', encoding='utf-8') as f:
                 data = json.load(f)
             print(f"✅ Loaded {len(data)} Pokémon from data file")
             return data
@@ -315,12 +326,11 @@ class PokemonGuessGame:
             response = requests.get(sprite_url, timeout=10)
             response.raise_for_status()
             
-            # Open image and resize with proper margin
+            # Open image and keep at original 96x96 size
             image = Image.open(BytesIO(response.content))
             
-            # Calculate size with 5px margin (75x75 for 80px button)
-            target_size = 70  # 80 - 10 for margins
-            image = image.resize((target_size, target_size), Image.Resampling.LANCZOS)
+            # Keep at original 96x96 pixels (no resizing needed)
+            image = image.resize((96, 96), Image.Resampling.LANCZOS)
             
             # Convert to PhotoImage for tkinter
             photo = ImageTk.PhotoImage(image)
@@ -336,8 +346,8 @@ class PokemonGuessGame:
     def load_x_icon(self):
         """Load and prepare the X icon for elimination overlay"""
         try:
-            x_image = Image.open('x_icon.png')
-            x_image = x_image.resize((70, 70), Image.Resampling.LANCZOS)
+            x_image = Image.open(get_resource_path('x_icon.png'))
+            x_image = x_image.resize((96, 96), Image.Resampling.LANCZOS)
             self.x_icon = ImageTk.PhotoImage(x_image)
             print("✅ X icon loaded successfully")
         except Exception as e:
@@ -349,8 +359,8 @@ class PokemonGuessGame:
         self.root = tk.Tk()
         self.root.title("Who's Your Pokémon!")
         
-        # Start with a regular sized window for debugging
-        self.root.geometry("1000x700")
+        # Window size for 96x96 images with 100px buttons (6x4 grid)
+        self.root.geometry("1300x800")
         self.root.configure(bg='#3d7dca')
         
         # Center the window
@@ -546,8 +556,8 @@ class PokemonGuessGame:
         game_frame = tk.Frame(self.main_frame, bg='#3d7dca')
         game_frame.pack(expand=True, fill='both')
         
-        # Player 1 side (LEFT) - force exactly half width
-        player1_frame = tk.Frame(game_frame, bg='#3d7dca', width=400)
+        # Player 1 side (LEFT) - width for 96x96 images
+        player1_frame = tk.Frame(game_frame, bg='#3d7dca', width=450)
         player1_frame.pack(side='left', expand=True, fill='both', padx=(0, 2))
         player1_frame.pack_propagate(False)  # Maintain width
         
@@ -582,8 +592,8 @@ class PokemonGuessGame:
         print("About to create Player 1 grid...")
         self.create_grid(p1_grid_frame, 1)
         
-        # Player 2 side (RIGHT) - force exactly half width
-        player2_frame = tk.Frame(game_frame, bg='#3d7dca', width=400)
+        # Player 2 side (RIGHT) - width for 96x96 images
+        player2_frame = tk.Frame(game_frame, bg='#3d7dca', width=450)
         player2_frame.pack(side='left', expand=True, fill='both', padx=(2, 0))
         player2_frame.pack_propagate(False)  # Maintain width
         
@@ -702,8 +712,8 @@ class PokemonGuessGame:
         # Debug print to ensure this method is called
         print(f"Creating grid for player {player} with {len(grid_data)} Pokemon")
         
-        # Fixed button size for uniform grid
-        button_size = 80
+        # Fixed button size for uniform grid - 96px image + 4px padding (2px each side)
+        button_size = 100  # 96px image + 4px padding
         
         for row in range(4):
             button_row = []
@@ -739,7 +749,7 @@ class PokemonGuessGame:
                     else:
                         button.configure(
                             text=pokemon_name,
-                            font=('Arial', 7, 'bold'),
+                            font=('Arial', 8, 'bold'),  # Smaller font for 100px buttons
                             wraplength=button_size - 10,
                             justify='center',
                             compound='center',
@@ -814,20 +824,20 @@ class PokemonGuessGame:
                     image=sprite_image,
                     text="",
                     compound='center',
-                    width=80,
-                    height=80
+                    width=100,
+                    height=100
                 )
                 button.image = sprite_image
             else:
                 button.configure(
                     text=pokemon,
                     image="",
-                    font=('Arial', 7, 'bold'),
-                    wraplength=70,
+                    font=('Arial', 8, 'bold'),
+                    wraplength=90,
                     justify='center',
                     compound='center',
-                    width=80,
-                    height=80
+                    width=100,
+                    height=100
                 )
         else:
             # Add elimination - show X icon or red X text
@@ -844,8 +854,8 @@ class PokemonGuessGame:
                     image=self.x_icon,
                     text="",
                     compound='center',
-                    width=80,
-                    height=80
+                    width=100,
+                    height=100
                 )
                 button.image = self.x_icon
             else:
@@ -853,10 +863,10 @@ class PokemonGuessGame:
                 button.configure(
                     text='X',
                     image="",
-                    font=('Arial', 20, 'bold'),
+                    font=('Arial', 24, 'bold'),  # Appropriate size for 100px buttons
                     compound='center',
-                    width=80,
-                    height=80
+                    width=100,
+                    height=100
                 )
         
         self.update_remaining_count()
