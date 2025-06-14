@@ -12,8 +12,8 @@ from pathlib import Path
 def build_app():
     """Build the Mac application"""
     
-    # Ensure we're in the right directory
-    script_dir = Path(__file__).parent
+    # Ensure we're in the parent directory (project root)
+    script_dir = Path(__file__).parent.parent
     os.chdir(script_dir)
     
     print("🔨 Building Who's Your Pokemon Mac Application...")
@@ -24,10 +24,9 @@ def build_app():
         "--name=Whos Your Pokemon",  # App name
         "--windowed",  # No console window
         "--onedir",  # Create a directory with all files
-        "--icon=question_mark.icns",  # Use question mark as app icon
-        "--add-data=pokemon_data.json:.",  # Include Pokemon data
-        "--add-data=x_icon.png:.",  # Include X icon
-        "--add-data=question_mark.icns:.",  # Include app icon
+        "--icon=assets/question_mark.icns",  # Use question mark as app icon
+        "--add-data=pokemon_data/pokemon_data.json:pokemon_data",  # Include Pokemon data in pokemon_data folder
+        "--add-data=assets:assets",  # Include all assets (logos, icons, etc.)
         "--clean",  # Clean cache before building
         "--noconfirm",  # Overwrite without asking
         "main.py"  # Main Python file
@@ -121,12 +120,12 @@ def create_app_bundle():
         
         # Copy icon with standard name for better macOS compatibility
         import shutil
-        icon_source = Path("question_mark.icns")
+        import subprocess
+        icon_source = Path("assets/question_mark.icns")
         if icon_source.exists():
             shutil.copy2(icon_source, resources_path / "icon.icns")
             
             # Update Info.plist to use standard icon name
-            import subprocess
             subprocess.run([
                 "plutil", "-replace", "CFBundleIconFile", "-string", "icon.icns",
                 str(contents_path / "Info.plist")

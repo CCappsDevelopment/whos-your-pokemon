@@ -30,9 +30,9 @@ A Python-based "Guess Who" inspired game where two players try to guess each oth
    ```
 3. **First-time setup**: Run the Pokémon data service to fetch all Pokémon data:
    ```bash
-   python3 pokemon_data_service.py
+   python3 pokemon_data/pokemon_data_service.py
    ```
-   This will create a `pokemon_data.json` file with all Pokémon names and sprite URLs.
+   This will create a `pokemon_data/pokemon_data.json` file with all Pokémon names and sprite URLs.
 
 ## How to Run
 
@@ -67,14 +67,17 @@ The game uses the [PokéAPI](https://pokeapi.co/) to provide:
 
 To refresh the Pokémon database with the latest data:
 ```bash
-python3 pokemon_data_service.py
+python3 pokemon_data/pokemon_data_service.py
 ```
 
 ## Files
 
 - `main.py` - Main game application
-- `pokemon_data_service.py` - Service to fetch Pokémon data from PokéAPI
-- `pokemon_data.json` - Cached Pokémon names and sprite URLs
+- `pokemon_data/pokemon_data_service.py` - Service to fetch Pokémon data from PokéAPI
+- `pokemon_data/pokemon_data.json` - Cached Pokémon names and sprite URLs
+- `assets/` - Image assets (icons, sprites)
+- `utils/` - Build scripts and utilities
+- `tests/` - Test files and mockups
 - `requirements.txt` - Python package dependencies
 
 ## How to Play

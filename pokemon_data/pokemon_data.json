@@ -1,0 +1,4214 @@
+{
+  "Excadrill": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/530.png",
+    "generation": "5"
+  },
+  "Araquanid": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/752.png",
+    "generation": "7"
+  },
+  "Skuntank": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/435.png",
+    "generation": "4"
+  },
+  "Timburr": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/532.png",
+    "generation": "5"
+  },
+  "Noibat": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/714.png",
+    "generation": "6"
+  },
+  "Drifblim": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/426.png",
+    "generation": "4"
+  },
+  "Quaxly": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/912.png",
+    "generation": "9"
+  },
+  "Igglybuff": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/174.png",
+    "generation": "2"
+  },
+  "Misdreavus": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/200.png",
+    "generation": "2"
+  },
+  "Squirtle": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png",
+    "generation": "1"
+  },
+  "Suicune": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/245.png",
+    "generation": "2"
+  },
+  "Weedle": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/13.png",
+    "generation": "1"
+  },
+  "Sigilyph": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/561.png",
+    "generation": "5"
+  },
+  "Gligar": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/207.png",
+    "generation": "2"
+  },
+  "Dragonair": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/148.png",
+    "generation": "1"
+  },
+  "Pelipper": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/279.png",
+    "generation": "3"
+  },
+  "Pyroar": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/668.png",
+    "generation": "6"
+  },
+  "Sunflora": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/192.png",
+    "generation": "2"
+  },
+  "Polteageist": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/855.png",
+    "generation": "8"
+  },
+  "Tyrogue": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/236.png",
+    "generation": "2"
+  },
+  "Shroomish": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/285.png",
+    "generation": "3"
+  },
+  "Arrokuda": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/846.png",
+    "generation": "8"
+  },
+  "Lumineon": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/457.png",
+    "generation": "4"
+  },
+  "Regidrago": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/895.png",
+    "generation": "8"
+  },
+  "Arceus": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/493.png",
+    "generation": "4"
+  },
+  "Mr-Rime": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/866.png",
+    "generation": "8"
+  },
+  "Ninetales": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/38.png",
+    "generation": "1"
+  },
+  "Cloyster": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/91.png",
+    "generation": "1"
+  },
+  "Shelgon": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/372.png",
+    "generation": "3"
+  },
+  "Audino": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/531.png",
+    "generation": "5"
+  },
+  "Magikarp": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/129.png",
+    "generation": "1"
+  },
+  "Swirlix": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/684.png",
+    "generation": "6"
+  },
+  "Lickitung": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/108.png",
+    "generation": "1"
+  },
+  "Onix": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/95.png",
+    "generation": "1"
+  },
+  "Yanmega": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/469.png",
+    "generation": "4"
+  },
+  "Hatterene": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/858.png",
+    "generation": "8"
+  },
+  "Runerigus": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/867.png",
+    "generation": "8"
+  },
+  "Raticate": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/20.png",
+    "generation": "1"
+  },
+  "Dialga": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/483.png",
+    "generation": "4"
+  },
+  "Pawmo": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/922.png",
+    "generation": "9"
+  },
+  "Dustox": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/269.png",
+    "generation": "3"
+  },
+  "Roserade": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/407.png",
+    "generation": "4"
+  },
+  "Vileplume": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/45.png",
+    "generation": "1"
+  },
+  "Lillipup": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/506.png",
+    "generation": "5"
+  },
+  "Thundurus-Incarnate": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/642.png",
+    "generation": "5"
+  },
+  "Scizor": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/212.png",
+    "generation": "2"
+  },
+  "Absol": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/359.png",
+    "generation": "3"
+  },
+  "Yamask": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/562.png",
+    "generation": "5"
+  },
+  "Finneon": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/456.png",
+    "generation": "4"
+  },
+  "Starly": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/396.png",
+    "generation": "4"
+  },
+  "Skarmory": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/227.png",
+    "generation": "2"
+  },
+  "Eternatus": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/890.png",
+    "generation": "8"
+  },
+  "Pinsir": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/127.png",
+    "generation": "1"
+  },
+  "Exploud": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/295.png",
+    "generation": "3"
+  },
+  "Dottler": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/825.png",
+    "generation": "8"
+  },
+  "Blitzle": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/522.png",
+    "generation": "5"
+  },
+  "Tynamo": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/602.png",
+    "generation": "5"
+  },
+  "Smoliv": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/928.png",
+    "generation": "9"
+  },
+  "Sceptile": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/254.png",
+    "generation": "3"
+  },
+  "Sandslash-Alola": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10102.png",
+    "generation": "7"
+  },
+  "Pawniard": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/624.png",
+    "generation": "5"
+  },
+  "Blaziken": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/257.png",
+    "generation": "3"
+  },
+  "Wurmple": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/265.png",
+    "generation": "3"
+  },
+  "Guzzlord": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/799.png",
+    "generation": "7"
+  },
+  "Jolteon": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/135.png",
+    "generation": "1"
+  },
+  "Natu": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/177.png",
+    "generation": "2"
+  },
+  "Klawf": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/950.png",
+    "generation": "9"
+  },
+  "Urshifu-Rapid-Strike": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10191.png",
+    "generation": "8"
+  },
+  "Rhyhorn": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/111.png",
+    "generation": "1"
+  },
+  "Wailmer": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/320.png",
+    "generation": "3"
+  },
+  "Zoroark-Hisui": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10239.png",
+    "generation": "8"
+  },
+  "Masquerain": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/284.png",
+    "generation": "3"
+  },
+  "Octillery": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/224.png",
+    "generation": "2"
+  },
+  "Stonjourner": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/874.png",
+    "generation": "8"
+  },
+  "Shinx": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/403.png",
+    "generation": "4"
+  },
+  "Barbaracle": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/689.png",
+    "generation": "6"
+  },
+  "Fletchling": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/661.png",
+    "generation": "6"
+  },
+  "Ninetales-Alola": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10104.png",
+    "generation": "7"
+  },
+  "Primeape": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/57.png",
+    "generation": "1"
+  },
+  "Ferroseed": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/597.png",
+    "generation": "5"
+  },
+  "Groudon": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/383.png",
+    "generation": "3"
+  },
+  "Mienshao": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/620.png",
+    "generation": "5"
+  },
+  "Steenee": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/762.png",
+    "generation": "7"
+  },
+  "Poltchageist": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1012.png",
+    "generation": "9"
+  },
+  "Dusclops": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/356.png",
+    "generation": "3"
+  },
+  "Clodsire": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/980.png",
+    "generation": "9"
+  },
+  "Floatzel": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/419.png",
+    "generation": "4"
+  },
+  "Magby": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/240.png",
+    "generation": "2"
+  },
+  "Toxtricity-Amped": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/849.png",
+    "generation": "8"
+  },
+  "Trubbish": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/568.png",
+    "generation": "5"
+  },
+  "Chatot": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/441.png",
+    "generation": "4"
+  },
+  "Dondozo": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/977.png",
+    "generation": "9"
+  },
+  "Staryu": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/120.png",
+    "generation": "1"
+  },
+  "Pincurchin": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/871.png",
+    "generation": "8"
+  },
+  "Glimmet": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/969.png",
+    "generation": "9"
+  },
+  "Umbreon": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/197.png",
+    "generation": "2"
+  },
+  "Delibird": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/225.png",
+    "generation": "2"
+  },
+  "Nidoqueen": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/31.png",
+    "generation": "1"
+  },
+  "Seel": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/86.png",
+    "generation": "1"
+  },
+  "Sneasel-Hisui": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10235.png",
+    "generation": "8"
+  },
+  "Tapu-Bulu": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/787.png",
+    "generation": "7"
+  },
+  "Fuecoco": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/909.png",
+    "generation": "9"
+  },
+  "Mismagius": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/429.png",
+    "generation": "4"
+  },
+  "Vespiquen": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/416.png",
+    "generation": "4"
+  },
+  "Dreepy": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/885.png",
+    "generation": "8"
+  },
+  "Zorua": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/570.png",
+    "generation": "5"
+  },
+  "Darmanitan-Galar-Standard": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10177.png",
+    "generation": "8"
+  },
+  "Dodrio": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/85.png",
+    "generation": "1"
+  },
+  "Wormadam-Plant": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/413.png",
+    "generation": "4"
+  },
+  "Bronzor": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/436.png",
+    "generation": "4"
+  },
+  "Milcery": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/868.png",
+    "generation": "8"
+  },
+  "Cresselia": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/488.png",
+    "generation": "4"
+  },
+  "Meloetta-Aria": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/648.png",
+    "generation": "5"
+  },
+  "Nincada": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/290.png",
+    "generation": "3"
+  },
+  "Banette": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/354.png",
+    "generation": "3"
+  },
+  "Haxorus": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/612.png",
+    "generation": "5"
+  },
+  "Mantyke": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/458.png",
+    "generation": "4"
+  },
+  "Flygon": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/330.png",
+    "generation": "3"
+  },
+  "Snorunt": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/361.png",
+    "generation": "3"
+  },
+  "Prinplup": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/394.png",
+    "generation": "4"
+  },
+  "Kirlia": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/281.png",
+    "generation": "3"
+  },
+  "Charmander": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png",
+    "generation": "1"
+  },
+  "Shroodle": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/944.png",
+    "generation": "9"
+  },
+  "Goldeen": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/118.png",
+    "generation": "1"
+  },
+  "Poliwrath": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/62.png",
+    "generation": "1"
+  },
+  "Azurill": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/298.png",
+    "generation": "3"
+  },
+  "Gothita": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/574.png",
+    "generation": "5"
+  },
+  "Gourgeist-Average": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/711.png",
+    "generation": "6"
+  },
+  "Bewear": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/760.png",
+    "generation": "7"
+  },
+  "Altaria": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/334.png",
+    "generation": "3"
+  },
+  "Phione": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/489.png",
+    "generation": "4"
+  },
+  "Brambleghast": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/947.png",
+    "generation": "9"
+  },
+  "Varoom": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/965.png",
+    "generation": "9"
+  },
+  "Flabebe": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/669.png",
+    "generation": "6"
+  },
+  "Chikorita": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/152.png",
+    "generation": "2"
+  },
+  "Nosepass": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/299.png",
+    "generation": "3"
+  },
+  "Golem-Alola": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10111.png",
+    "generation": "7"
+  },
+  "Sandile": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/551.png",
+    "generation": "5"
+  },
+  "Uxie": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/480.png",
+    "generation": "4"
+  },
+  "Manectric": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/310.png",
+    "generation": "3"
+  },
+  "Shaymin-Land": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/492.png",
+    "generation": "4"
+  },
+  "Eelektross": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/604.png",
+    "generation": "5"
+  },
+  "Chansey": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/113.png",
+    "generation": "1"
+  },
+  "Bisharp": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/625.png",
+    "generation": "5"
+  },
+  "Dragonite": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/149.png",
+    "generation": "1"
+  },
+  "Torracat": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/726.png",
+    "generation": "7"
+  },
+  "Chespin": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/650.png",
+    "generation": "6"
+  },
+  "Lunatone": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/337.png",
+    "generation": "3"
+  },
+  "Golem": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/76.png",
+    "generation": "1"
+  },
+  "Raikou": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/243.png",
+    "generation": "2"
+  },
+  "Sandshrew": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/27.png",
+    "generation": "1"
+  },
+  "Pawmot": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/923.png",
+    "generation": "9"
+  },
+  "Politoed": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/186.png",
+    "generation": "2"
+  },
+  "Skiploom": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/188.png",
+    "generation": "2"
+  },
+  "Aerodactyl": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/142.png",
+    "generation": "1"
+  },
+  "Stantler": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/234.png",
+    "generation": "2"
+  },
+  "Ferrothorn": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/598.png",
+    "generation": "5"
+  },
+  "Aron": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/304.png",
+    "generation": "3"
+  },
+  "Nidoking": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/34.png",
+    "generation": "1"
+  },
+  "Toedscool": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/948.png",
+    "generation": "9"
+  },
+  "Lycanroc-Midnight": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10126.png",
+    "generation": "7"
+  },
+  "Salamence": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/373.png",
+    "generation": "3"
+  },
+  "Cofagrigus": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/563.png",
+    "generation": "5"
+  },
+  "Vivillon": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/666.png",
+    "generation": "6"
+  },
+  "Archeops": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/567.png",
+    "generation": "5"
+  },
+  "Meganium": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/154.png",
+    "generation": "2"
+  },
+  "Ponyta": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/77.png",
+    "generation": "1"
+  },
+  "Shelmet": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/616.png",
+    "generation": "5"
+  },
+  "Keldeo-Ordinary": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/647.png",
+    "generation": "5"
+  },
+  "Skwovet": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/819.png",
+    "generation": "8"
+  },
+  "Aromatisse": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/683.png",
+    "generation": "6"
+  },
+  "Scrafty": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/560.png",
+    "generation": "5"
+  },
+  "Golisopod": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/768.png",
+    "generation": "7"
+  },
+  "Mudkip": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/258.png",
+    "generation": "3"
+  },
+  "Kommo-O": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/784.png",
+    "generation": "7"
+  },
+  "Pachirisu": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/417.png",
+    "generation": "4"
+  },
+  "Sandaconda": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/844.png",
+    "generation": "8"
+  },
+  "Dachsbun": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/927.png",
+    "generation": "9"
+  },
+  "Greninja": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/658.png",
+    "generation": "6"
+  },
+  "Amaura": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/698.png",
+    "generation": "6"
+  },
+  "Marshadow": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/802.png",
+    "generation": "7"
+  },
+  "Dragapult": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/887.png",
+    "generation": "8"
+  },
+  "Garganacl": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/934.png",
+    "generation": "9"
+  },
+  "Grafaiai": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/945.png",
+    "generation": "9"
+  },
+  "Wigglytuff": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/40.png",
+    "generation": "1"
+  },
+  "Rattata-Alola": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10091.png",
+    "generation": "7"
+  },
+  "Regieleki": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/894.png",
+    "generation": "8"
+  },
+  "Nihilego": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/793.png",
+    "generation": "7"
+  },
+  "Flamigo": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/973.png",
+    "generation": "9"
+  },
+  "Azelf": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/482.png",
+    "generation": "4"
+  },
+  "Bidoof": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/399.png",
+    "generation": "4"
+  },
+  "Garbodor": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/569.png",
+    "generation": "5"
+  },
+  "Klefki": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/707.png",
+    "generation": "6"
+  },
+  "Incineroar": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/727.png",
+    "generation": "7"
+  },
+  "Wartortle": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png",
+    "generation": "1"
+  },
+  "Archaludon": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1018.png",
+    "generation": "9"
+  },
+  "Nacli": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/932.png",
+    "generation": "9"
+  },
+  "Grovyle": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/253.png",
+    "generation": "3"
+  },
+  "Cubone": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/104.png",
+    "generation": "1"
+  },
+  "Servine": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/496.png",
+    "generation": "5"
+  },
+  "Hawlucha": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/701.png",
+    "generation": "6"
+  },
+  "Calyrex-Shadow": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10194.png",
+    "generation": "8"
+  },
+  "Gabite": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/444.png",
+    "generation": "4"
+  },
+  "Pumpkaboo-Average": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/710.png",
+    "generation": "6"
+  },
+  "Gothorita": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/575.png",
+    "generation": "5"
+  },
+  "Cufant": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/878.png",
+    "generation": "8"
+  },
+  "Honedge": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/679.png",
+    "generation": "6"
+  },
+  "Xerneas": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/716.png",
+    "generation": "6"
+  },
+  "Emolga": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/587.png",
+    "generation": "5"
+  },
+  "Riolu": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/447.png",
+    "generation": "4"
+  },
+  "Steelix": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/208.png",
+    "generation": "2"
+  },
+  "Arctozolt": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/881.png",
+    "generation": "8"
+  },
+  "Xatu": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/178.png",
+    "generation": "2"
+  },
+  "Fraxure": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/611.png",
+    "generation": "5"
+  },
+  "Shuppet": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/353.png",
+    "generation": "3"
+  },
+  "Cursola": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/864.png",
+    "generation": "8"
+  },
+  "Tarountula": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/917.png",
+    "generation": "9"
+  },
+  "Foongus": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/590.png",
+    "generation": "5"
+  },
+  "Morgrem": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/860.png",
+    "generation": "8"
+  },
+  "Swellow": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/277.png",
+    "generation": "3"
+  },
+  "Tirtouga": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/564.png",
+    "generation": "5"
+  },
+  "Gliscor": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/472.png",
+    "generation": "4"
+  },
+  "Tapu-Lele": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/786.png",
+    "generation": "7"
+  },
+  "Staraptor": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/398.png",
+    "generation": "4"
+  },
+  "Stunfisk-Galar": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10180.png",
+    "generation": "8"
+  },
+  "Pichu": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/172.png",
+    "generation": "2"
+  },
+  "Empoleon": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/395.png",
+    "generation": "4"
+  },
+  "Cherubi": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/420.png",
+    "generation": "4"
+  },
+  "Weepinbell": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/70.png",
+    "generation": "1"
+  },
+  "Barboach": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/339.png",
+    "generation": "3"
+  },
+  "Budew": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/406.png",
+    "generation": "4"
+  },
+  "Clefairy": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/35.png",
+    "generation": "1"
+  },
+  "Turtonator": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/776.png",
+    "generation": "7"
+  },
+  "Swoobat": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/528.png",
+    "generation": "5"
+  },
+  "Conkeldurr": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/534.png",
+    "generation": "5"
+  },
+  "Gible": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/443.png",
+    "generation": "4"
+  },
+  "Sylveon": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/700.png",
+    "generation": "6"
+  },
+  "Exeggutor-Alola": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10114.png",
+    "generation": "7"
+  },
+  "Voltorb": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/100.png",
+    "generation": "1"
+  },
+  "Lokix": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/920.png",
+    "generation": "9"
+  },
+  "Wugtrio": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/961.png",
+    "generation": "9"
+  },
+  "Decidueye-Hisui": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10244.png",
+    "generation": "8"
+  },
+  "Drilbur": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/529.png",
+    "generation": "5"
+  },
+  "Eevee": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/133.png",
+    "generation": "1"
+  },
+  "Huntail": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/367.png",
+    "generation": "3"
+  },
+  "Coalossal": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/839.png",
+    "generation": "8"
+  },
+  "Florges": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/671.png",
+    "generation": "6"
+  },
+  "Applin": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/840.png",
+    "generation": "8"
+  },
+  "Gastly": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/92.png",
+    "generation": "1"
+  },
+  "Ralts": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/280.png",
+    "generation": "3"
+  },
+  "Porygon-Z": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/474.png",
+    "generation": "4"
+  },
+  "Azumarill": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/184.png",
+    "generation": "2"
+  },
+  "Chinchou": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/170.png",
+    "generation": "2"
+  },
+  "Granbull": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/210.png",
+    "generation": "2"
+  },
+  "Spearow": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/21.png",
+    "generation": "1"
+  },
+  "Palkia": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/484.png",
+    "generation": "4"
+  },
+  "Pineco": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/204.png",
+    "generation": "2"
+  },
+  "Clawitzer": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/693.png",
+    "generation": "6"
+  },
+  "Furfrou": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/676.png",
+    "generation": "6"
+  },
+  "Mudbray": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/749.png",
+    "generation": "7"
+  },
+  "Electivire": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/466.png",
+    "generation": "4"
+  },
+  "Dartrix": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/723.png",
+    "generation": "7"
+  },
+  "Floragato": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/907.png",
+    "generation": "9"
+  },
+  "Geodude-Alola": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10109.png",
+    "generation": "7"
+  },
+  "Cosmoem": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/790.png",
+    "generation": "7"
+  },
+  "Scyther": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/123.png",
+    "generation": "1"
+  },
+  "Hariyama": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/297.png",
+    "generation": "3"
+  },
+  "Drednaw": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/834.png",
+    "generation": "8"
+  },
+  "Charizard": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png",
+    "generation": "1"
+  },
+  "Vaporeon": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/134.png",
+    "generation": "1"
+  },
+  "Nidoran-M": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/32.png",
+    "generation": "1"
+  },
+  "Spritzee": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/682.png",
+    "generation": "6"
+  },
+  "Wiglett": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/960.png",
+    "generation": "9"
+  },
+  "Lurantis": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/754.png",
+    "generation": "7"
+  },
+  "Krokorok": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/552.png",
+    "generation": "5"
+  },
+  "Swablu": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/333.png",
+    "generation": "3"
+  },
+  "Archen": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/566.png",
+    "generation": "5"
+  },
+  "Flapple": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/841.png",
+    "generation": "8"
+  },
+  "Remoraid": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/223.png",
+    "generation": "2"
+  },
+  "Darumaka": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/554.png",
+    "generation": "5"
+  },
+  "Quilladin": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/651.png",
+    "generation": "6"
+  },
+  "Rolycoly": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/837.png",
+    "generation": "8"
+  },
+  "Tympole": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/535.png",
+    "generation": "5"
+  },
+  "Sinistcha": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1013.png",
+    "generation": "9"
+  },
+  "Togekiss": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/468.png",
+    "generation": "4"
+  },
+  "Lunala": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/792.png",
+    "generation": "7"
+  },
+  "Ursaring": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/217.png",
+    "generation": "2"
+  },
+  "Pidgey": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/16.png",
+    "generation": "1"
+  },
+  "Mewtwo": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/150.png",
+    "generation": "1"
+  },
+  "Sinistea": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/854.png",
+    "generation": "8"
+  },
+  "Gholdengo": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1000.png",
+    "generation": "9"
+  },
+  "Exeggutor": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/103.png",
+    "generation": "1"
+  },
+  "Vikavolt": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/738.png",
+    "generation": "7"
+  },
+  "Yungoos": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/734.png",
+    "generation": "7"
+  },
+  "Oricorio-Pom-Pom": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10123.png",
+    "generation": "7"
+  },
+  "Mew": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/151.png",
+    "generation": "1"
+  },
+  "Golurk": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/623.png",
+    "generation": "5"
+  },
+  "Vulpix": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/37.png",
+    "generation": "1"
+  },
+  "Donphan": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/232.png",
+    "generation": "2"
+  },
+  "Finizen": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/963.png",
+    "generation": "9"
+  },
+  "Miraidon": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1008.png",
+    "generation": "9"
+  },
+  "Primarina": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/730.png",
+    "generation": "7"
+  },
+  "Shieldon": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/410.png",
+    "generation": "4"
+  },
+  "Cubchoo": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/613.png",
+    "generation": "5"
+  },
+  "Rapidash-Galar": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10163.png",
+    "generation": "8"
+  },
+  "Typhlosion-Hisui": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10233.png",
+    "generation": "8"
+  },
+  "Nuzleaf": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/274.png",
+    "generation": "3"
+  },
+  "Wattrel": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/940.png",
+    "generation": "9"
+  },
+  "Mr-Mime": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/122.png",
+    "generation": "1"
+  },
+  "Raticate-Alola": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10092.png",
+    "generation": "7"
+  },
+  "Bibarel": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/400.png",
+    "generation": "4"
+  },
+  "Electrode": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/101.png",
+    "generation": "1"
+  },
+  "Espeon": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/196.png",
+    "generation": "2"
+  },
+  "Lampent": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/608.png",
+    "generation": "5"
+  },
+  "Tentacool": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/72.png",
+    "generation": "1"
+  },
+  "Toxapex": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/748.png",
+    "generation": "7"
+  },
+  "Brionne": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/729.png",
+    "generation": "7"
+  },
+  "Blipbug": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/824.png",
+    "generation": "8"
+  },
+  "Gulpin": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/316.png",
+    "generation": "3"
+  },
+  "Eldegoss": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/830.png",
+    "generation": "8"
+  },
+  "Spiritomb": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/442.png",
+    "generation": "4"
+  },
+  "Magnemite": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/81.png",
+    "generation": "1"
+  },
+  "Croagunk": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/453.png",
+    "generation": "4"
+  },
+  "Chingling": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/433.png",
+    "generation": "4"
+  },
+  "Reuniclus": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/579.png",
+    "generation": "5"
+  },
+  "Woobat": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/527.png",
+    "generation": "5"
+  },
+  "Genesect": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/649.png",
+    "generation": "5"
+  },
+  "Thwackey": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/811.png",
+    "generation": "8"
+  },
+  "Glastrier": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/896.png",
+    "generation": "8"
+  },
+  "Veluza": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/976.png",
+    "generation": "9"
+  },
+  "Vulpix-Alola": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10103.png",
+    "generation": "7"
+  },
+  "Fidough": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/926.png",
+    "generation": "9"
+  },
+  "Lopunny": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/428.png",
+    "generation": "4"
+  },
+  "Espurr": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/677.png",
+    "generation": "6"
+  },
+  "Swanna": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/581.png",
+    "generation": "5"
+  },
+  "Braviary": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/628.png",
+    "generation": "5"
+  },
+  "Lanturn": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/171.png",
+    "generation": "2"
+  },
+  "Duskull": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/355.png",
+    "generation": "3"
+  },
+  "Celesteela": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/797.png",
+    "generation": "7"
+  },
+  "Gimmighoul": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/999.png",
+    "generation": "9"
+  },
+  "Mabosstiff": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/943.png",
+    "generation": "9"
+  },
+  "Dratini": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/147.png",
+    "generation": "1"
+  },
+  "Druddigon": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/621.png",
+    "generation": "5"
+  },
+  "Weavile": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/461.png",
+    "generation": "4"
+  },
+  "Dubwool": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/832.png",
+    "generation": "8"
+  },
+  "Bombirdier": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/962.png",
+    "generation": "9"
+  },
+  "Drowzee": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/96.png",
+    "generation": "1"
+  },
+  "Pupitar": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/247.png",
+    "generation": "2"
+  },
+  "Meowth": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/52.png",
+    "generation": "1"
+  },
+  "Cradily": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/346.png",
+    "generation": "3"
+  },
+  "Emboar": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/500.png",
+    "generation": "5"
+  },
+  "Regigigas": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/486.png",
+    "generation": "4"
+  },
+  "Munna": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/517.png",
+    "generation": "5"
+  },
+  "Whimsicott": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/547.png",
+    "generation": "5"
+  },
+  "Solosis": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/577.png",
+    "generation": "5"
+  },
+  "Zapdos-Galar": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10170.png",
+    "generation": "8"
+  },
+  "Seadra": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/117.png",
+    "generation": "1"
+  },
+  "Carkol": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/838.png",
+    "generation": "8"
+  },
+  "Entei": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/244.png",
+    "generation": "2"
+  },
+  "Forretress": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/205.png",
+    "generation": "2"
+  },
+  "Purrloin": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/509.png",
+    "generation": "5"
+  },
+  "Scovillain": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/952.png",
+    "generation": "9"
+  },
+  "Metang": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/375.png",
+    "generation": "3"
+  },
+  "Toedscruel": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/949.png",
+    "generation": "9"
+  },
+  "Vanillite": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/582.png",
+    "generation": "5"
+  },
+  "Sawk": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/539.png",
+    "generation": "5"
+  },
+  "Rowlet": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/722.png",
+    "generation": "7"
+  },
+  "Lileep": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/345.png",
+    "generation": "3"
+  },
+  "Skeledirge": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/911.png",
+    "generation": "9"
+  },
+  "Kricketot": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/401.png",
+    "generation": "4"
+  },
+  "Braixen": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/654.png",
+    "generation": "6"
+  },
+  "Komala": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/775.png",
+    "generation": "7"
+  },
+  "Abra": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/63.png",
+    "generation": "1"
+  },
+  "Murkrow": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/198.png",
+    "generation": "2"
+  },
+  "Burmy": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/412.png",
+    "generation": "4"
+  },
+  "Plusle": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/311.png",
+    "generation": "3"
+  },
+  "Pyukumuku": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/771.png",
+    "generation": "7"
+  },
+  "Whiscash": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/340.png",
+    "generation": "3"
+  },
+  "Dipplin": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1011.png",
+    "generation": "9"
+  },
+  "Bastiodon": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/411.png",
+    "generation": "4"
+  },
+  "Overqwil": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/904.png",
+    "generation": "8"
+  },
+  "Hypno": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/97.png",
+    "generation": "1"
+  },
+  "Grimer-Alola": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10112.png",
+    "generation": "7"
+  },
+  "Moltres": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/146.png",
+    "generation": "1"
+  },
+  "Larvesta": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/636.png",
+    "generation": "5"
+  },
+  "Zoroark": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/571.png",
+    "generation": "5"
+  },
+  "Butterfree": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/12.png",
+    "generation": "1"
+  },
+  "Girafarig": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/203.png",
+    "generation": "2"
+  },
+  "Vigoroth": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/288.png",
+    "generation": "3"
+  },
+  "Rellor": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/953.png",
+    "generation": "9"
+  },
+  "Infernape": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/392.png",
+    "generation": "4"
+  },
+  "Grapploct": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/853.png",
+    "generation": "8"
+  },
+  "Jirachi": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/385.png",
+    "generation": "3"
+  },
+  "Nickit": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/827.png",
+    "generation": "8"
+  },
+  "Ting-Lu": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1003.png",
+    "generation": "9"
+  },
+  "Slowbro": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/80.png",
+    "generation": "1"
+  },
+  "Aggron": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/306.png",
+    "generation": "3"
+  },
+  "Silvally": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/773.png",
+    "generation": "7"
+  },
+  "Clauncher": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/692.png",
+    "generation": "6"
+  },
+  "Medicham": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/308.png",
+    "generation": "3"
+  },
+  "Shedinja": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/292.png",
+    "generation": "3"
+  },
+  "Stunky": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/434.png",
+    "generation": "4"
+  },
+  "Oricorio-Pau": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10124.png",
+    "generation": "7"
+  },
+  "Samurott-Hisui": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10236.png",
+    "generation": "8"
+  },
+  "Krabby": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/98.png",
+    "generation": "1"
+  },
+  "Espathra": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/956.png",
+    "generation": "9"
+  },
+  "Fearow": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/22.png",
+    "generation": "1"
+  },
+  "Vanilluxe": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/584.png",
+    "generation": "5"
+  },
+  "Sableye": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/302.png",
+    "generation": "3"
+  },
+  "Gumshoos": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/735.png",
+    "generation": "7"
+  },
+  "Bouffalant": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/626.png",
+    "generation": "5"
+  },
+  "Snover": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/459.png",
+    "generation": "4"
+  },
+  "Qwilfish-Hisui": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10234.png",
+    "generation": "8"
+  },
+  "Hitmontop": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/237.png",
+    "generation": "2"
+  },
+  "Ho-Oh": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/250.png",
+    "generation": "2"
+  },
+  "Zigzagoon": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/263.png",
+    "generation": "3"
+  },
+  "Spheal": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/363.png",
+    "generation": "3"
+  },
+  "Swadloon": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/541.png",
+    "generation": "5"
+  },
+  "Inkay": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/686.png",
+    "generation": "6"
+  },
+  "Ledian": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/166.png",
+    "generation": "2"
+  },
+  "Zigzagoon-Galar": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10174.png",
+    "generation": "8"
+  },
+  "Sirfetchd": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/865.png",
+    "generation": "8"
+  },
+  "Arctibax": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/997.png",
+    "generation": "9"
+  },
+  "Arbok": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/24.png",
+    "generation": "1"
+  },
+  "Kangaskhan": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/115.png",
+    "generation": "1"
+  },
+  "Crawdaunt": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/342.png",
+    "generation": "3"
+  },
+  "Tapu-Fini": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/788.png",
+    "generation": "7"
+  },
+  "Pansear": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/513.png",
+    "generation": "5"
+  },
+  "Caterpie": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png",
+    "generation": "1"
+  },
+  "Tropius": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/357.png",
+    "generation": "3"
+  },
+  "Arctovish": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/883.png",
+    "generation": "8"
+  },
+  "Zeraora": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/807.png",
+    "generation": "7"
+  },
+  "Skorupi": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/451.png",
+    "generation": "4"
+  },
+  "Kingambit": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/983.png",
+    "generation": "9"
+  },
+  "Magneton": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/82.png",
+    "generation": "1"
+  },
+  "Ambipom": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/424.png",
+    "generation": "4"
+  },
+  "Glimmora": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/970.png",
+    "generation": "9"
+  },
+  "Lairon": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/305.png",
+    "generation": "3"
+  },
+  "Torchic": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/255.png",
+    "generation": "3"
+  },
+  "Kakuna": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/14.png",
+    "generation": "1"
+  },
+  "Sawsbuck": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/586.png",
+    "generation": "5"
+  },
+  "Ivysaur": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png",
+    "generation": "1"
+  },
+  "Stunfisk": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/618.png",
+    "generation": "5"
+  },
+  "Solgaleo": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/791.png",
+    "generation": "7"
+  },
+  "Snubbull": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/209.png",
+    "generation": "2"
+  },
+  "Kyurem-Black": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10022.png",
+    "generation": "5"
+  },
+  "Landorus-Incarnate": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/645.png",
+    "generation": "5"
+  },
+  "Naganadel": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/804.png",
+    "generation": "7"
+  },
+  "Raboot": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/814.png",
+    "generation": "8"
+  },
+  "Shiinotic": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/756.png",
+    "generation": "7"
+  },
+  "Reshiram": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/643.png",
+    "generation": "5"
+  },
+  "Kadabra": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/64.png",
+    "generation": "1"
+  },
+  "Wo-Chien": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1001.png",
+    "generation": "9"
+  },
+  "Salazzle": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/758.png",
+    "generation": "7"
+  },
+  "Wooper": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/194.png",
+    "generation": "2"
+  },
+  "Binacle": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/688.png",
+    "generation": "6"
+  },
+  "Makuhita": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/296.png",
+    "generation": "3"
+  },
+  "Snom": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/872.png",
+    "generation": "8"
+  },
+  "Kilowattrel": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/941.png",
+    "generation": "9"
+  },
+  "Ponyta-Galar": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10162.png",
+    "generation": "8"
+  },
+  "Braviary-Hisui": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10240.png",
+    "generation": "8"
+  },
+  "Jynx": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/124.png",
+    "generation": "1"
+  },
+  "Popplio": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/728.png",
+    "generation": "7"
+  },
+  "Cetitan": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/975.png",
+    "generation": "9"
+  },
+  "Magmortar": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/467.png",
+    "generation": "4"
+  },
+  "Grookey": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/810.png",
+    "generation": "8"
+  },
+  "Weezing": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/110.png",
+    "generation": "1"
+  },
+  "Geodude": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/74.png",
+    "generation": "1"
+  },
+  "Luxio": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/404.png",
+    "generation": "4"
+  },
+  "Froslass": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/478.png",
+    "generation": "4"
+  },
+  "Mawile": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/303.png",
+    "generation": "3"
+  },
+  "Rookidee": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/821.png",
+    "generation": "8"
+  },
+  "Chandelure": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/609.png",
+    "generation": "5"
+  },
+  "Chimchar": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/390.png",
+    "generation": "4"
+  },
+  "Vanillish": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/583.png",
+    "generation": "5"
+  },
+  "Kyurem": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/646.png",
+    "generation": "5"
+  },
+  "Snorlax": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/143.png",
+    "generation": "1"
+  },
+  "Chewtle": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/833.png",
+    "generation": "8"
+  },
+  "Amoonguss": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/591.png",
+    "generation": "5"
+  },
+  "Electrike": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/309.png",
+    "generation": "3"
+  },
+  "Relicanth": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/369.png",
+    "generation": "3"
+  },
+  "Quaquaval": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/914.png",
+    "generation": "9"
+  },
+  "Sunkern": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/191.png",
+    "generation": "2"
+  },
+  "Skitty": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/300.png",
+    "generation": "3"
+  },
+  "Yveltal": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/717.png",
+    "generation": "6"
+  },
+  "Passimian": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/766.png",
+    "generation": "7"
+  },
+  "Paras": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/46.png",
+    "generation": "1"
+  },
+  "Dugtrio": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/51.png",
+    "generation": "1"
+  },
+  "Noivern": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/715.png",
+    "generation": "6"
+  },
+  "Dewott": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/502.png",
+    "generation": "5"
+  },
+  "Centiskorch": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/851.png",
+    "generation": "8"
+  },
+  "Corsola": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/222.png",
+    "generation": "2"
+  },
+  "Tyranitar": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/248.png",
+    "generation": "2"
+  },
+  "Sewaddle": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/540.png",
+    "generation": "5"
+  },
+  "Grubbin": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/736.png",
+    "generation": "7"
+  },
+  "Tangela": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/114.png",
+    "generation": "1"
+  },
+  "Mightyena": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/262.png",
+    "generation": "3"
+  },
+  "Ludicolo": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/272.png",
+    "generation": "3"
+  },
+  "Grimer": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/88.png",
+    "generation": "1"
+  },
+  "Drapion": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/452.png",
+    "generation": "4"
+  },
+  "Pawmi": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/921.png",
+    "generation": "9"
+  },
+  "Houndstone": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/972.png",
+    "generation": "9"
+  },
+  "Pikipek": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/731.png",
+    "generation": "7"
+  },
+  "Bagon": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/371.png",
+    "generation": "3"
+  },
+  "Minccino": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/572.png",
+    "generation": "5"
+  },
+  "Muk": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/89.png",
+    "generation": "1"
+  },
+  "Golbat": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/42.png",
+    "generation": "1"
+  },
+  "Fennekin": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/653.png",
+    "generation": "6"
+  },
+  "Glaceon": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/471.png",
+    "generation": "4"
+  },
+  "Sandshrew-Alola": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10101.png",
+    "generation": "7"
+  },
+  "Elekid": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/239.png",
+    "generation": "2"
+  },
+  "Clefable": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/36.png",
+    "generation": "1"
+  },
+  "Deerling": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/585.png",
+    "generation": "5"
+  },
+  "Scolipede": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/545.png",
+    "generation": "5"
+  },
+  "Jellicent": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/593.png",
+    "generation": "5"
+  },
+  "Gorebyss": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/368.png",
+    "generation": "3"
+  },
+  "Lotad": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/270.png",
+    "generation": "3"
+  },
+  "Poochyena": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/261.png",
+    "generation": "3"
+  },
+  "Litten": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/725.png",
+    "generation": "7"
+  },
+  "Bellibolt": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/939.png",
+    "generation": "9"
+  },
+  "Venomoth": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/49.png",
+    "generation": "1"
+  },
+  "Yamask-Galar": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10179.png",
+    "generation": "8"
+  },
+  "Oricorio-Baile": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/741.png",
+    "generation": "7"
+  },
+  "Lapras": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/131.png",
+    "generation": "1"
+  },
+  "Lilligant": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/549.png",
+    "generation": "5"
+  },
+  "Nidorino": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/33.png",
+    "generation": "1"
+  },
+  "Jangmo-O": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/782.png",
+    "generation": "7"
+  },
+  "Volbeat": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/313.png",
+    "generation": "3"
+  },
+  "Virizion": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/640.png",
+    "generation": "5"
+  },
+  "Zarude": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/893.png",
+    "generation": "8"
+  },
+  "Chesnaught": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/652.png",
+    "generation": "6"
+  },
+  "Ariados": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/168.png",
+    "generation": "2"
+  },
+  "Cobalion": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/638.png",
+    "generation": "5"
+  },
+  "Solrock": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/338.png",
+    "generation": "3"
+  },
+  "Leafeon": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/470.png",
+    "generation": "4"
+  },
+  "Tentacruel": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/73.png",
+    "generation": "1"
+  },
+  "Frogadier": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/657.png",
+    "generation": "6"
+  },
+  "Hoopa": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/720.png",
+    "generation": "6"
+  },
+  "Galvantula": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/596.png",
+    "generation": "5"
+  },
+  "Dracozolt": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/880.png",
+    "generation": "8"
+  },
+  "Castform": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/351.png",
+    "generation": "3"
+  },
+  "Maractus": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/556.png",
+    "generation": "5"
+  },
+  "Minun": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/312.png",
+    "generation": "3"
+  },
+  "Simisear": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/514.png",
+    "generation": "5"
+  },
+  "Turtwig": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/387.png",
+    "generation": "4"
+  },
+  "Sandygast": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/769.png",
+    "generation": "7"
+  },
+  "Gigalith": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/526.png",
+    "generation": "5"
+  },
+  "Zacian": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/888.png",
+    "generation": "8"
+  },
+  "Cherrim": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/421.png",
+    "generation": "4"
+  },
+  "Parasect": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/47.png",
+    "generation": "1"
+  },
+  "Zapdos": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/145.png",
+    "generation": "1"
+  },
+  "Skrelp": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/690.png",
+    "generation": "6"
+  },
+  "Ducklett": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/580.png",
+    "generation": "5"
+  },
+  "Spectrier": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/897.png",
+    "generation": "8"
+  },
+  "Tauros": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/128.png",
+    "generation": "1"
+  },
+  "Togepi": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/175.png",
+    "generation": "2"
+  },
+  "Teddiursa": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/216.png",
+    "generation": "2"
+  },
+  "Celebi": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/251.png",
+    "generation": "2"
+  },
+  "Articuno": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/144.png",
+    "generation": "1"
+  },
+  "Gurdurr": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/533.png",
+    "generation": "5"
+  },
+  "Hippopotas": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/449.png",
+    "generation": "4"
+  },
+  "Maschiff": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/942.png",
+    "generation": "9"
+  },
+  "Trapinch": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/328.png",
+    "generation": "3"
+  },
+  "Cyndaquil": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/155.png",
+    "generation": "2"
+  },
+  "Stakataka": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/805.png",
+    "generation": "7"
+  },
+  "Salandit": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/757.png",
+    "generation": "7"
+  },
+  "Cyclizar": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/967.png",
+    "generation": "9"
+  },
+  "Mudsdale": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/750.png",
+    "generation": "7"
+  },
+  "Pansage": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/511.png",
+    "generation": "5"
+  },
+  "Hoopa-Unbound": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10086.png",
+    "generation": "6"
+  },
+  "Panpour": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/515.png",
+    "generation": "5"
+  },
+  "Wynaut": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/360.png",
+    "generation": "3"
+  },
+  "Gyarados": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/130.png",
+    "generation": "1"
+  },
+  "Articuno-Galar": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10169.png",
+    "generation": "8"
+  },
+  "Gallade": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/475.png",
+    "generation": "4"
+  },
+  "Lycanroc-Midday": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/745.png",
+    "generation": "7"
+  },
+  "Silicobra": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/843.png",
+    "generation": "8"
+  },
+  "Tinkatuff": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/958.png",
+    "generation": "9"
+  },
+  "Tyrunt": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/696.png",
+    "generation": "6"
+  },
+  "Cramorant": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/845.png",
+    "generation": "8"
+  },
+  "Cetoddle": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/974.png",
+    "generation": "9"
+  },
+  "Blissey": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/242.png",
+    "generation": "2"
+  },
+  "Kartana": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/798.png",
+    "generation": "7"
+  },
+  "Mothim": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/414.png",
+    "generation": "4"
+  },
+  "Orbeetle": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/826.png",
+    "generation": "8"
+  },
+  "Serperior": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/497.png",
+    "generation": "5"
+  },
+  "Stoutland": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/508.png",
+    "generation": "5"
+  },
+  "Talonflame": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/663.png",
+    "generation": "6"
+  },
+  "Torterra": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/389.png",
+    "generation": "4"
+  },
+  "Lombre": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/271.png",
+    "generation": "3"
+  },
+  "Thievul": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/828.png",
+    "generation": "8"
+  },
+  "Tyrantrum": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/697.png",
+    "generation": "6"
+  },
+  "Toucannon": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/733.png",
+    "generation": "7"
+  },
+  "Charjabug": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/737.png",
+    "generation": "7"
+  },
+  "Mime-Jr": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/439.png",
+    "generation": "4"
+  },
+  "Necrozma": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/800.png",
+    "generation": "7"
+  },
+  "Gossifleur": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/829.png",
+    "generation": "8"
+  },
+  "Accelgor": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/617.png",
+    "generation": "5"
+  },
+  "Porygon": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/137.png",
+    "generation": "1"
+  },
+  "Wobbuffet": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/202.png",
+    "generation": "2"
+  },
+  "Delphox": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/655.png",
+    "generation": "6"
+  },
+  "Beldum": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/374.png",
+    "generation": "3"
+  },
+  "Skiddo": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/672.png",
+    "generation": "6"
+  },
+  "Zangoose": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/335.png",
+    "generation": "3"
+  },
+  "Mareep": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/179.png",
+    "generation": "2"
+  },
+  "Surskit": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/283.png",
+    "generation": "3"
+  },
+  "Scatterbug": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/664.png",
+    "generation": "6"
+  },
+  "Hakamo-O": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/783.png",
+    "generation": "7"
+  },
+  "Avalugg": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/713.png",
+    "generation": "6"
+  },
+  "Unown": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/201.png",
+    "generation": "2"
+  },
+  "Spidops": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/918.png",
+    "generation": "9"
+  },
+  "Sneasel": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/215.png",
+    "generation": "2"
+  },
+  "Throh": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/538.png",
+    "generation": "5"
+  },
+  "Hydreigon": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/635.png",
+    "generation": "5"
+  },
+  "Goodra-Hisui": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10242.png",
+    "generation": "8"
+  },
+  "Flittle": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/955.png",
+    "generation": "9"
+  },
+  "Venipede": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/543.png",
+    "generation": "5"
+  },
+  "Lucario": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/448.png",
+    "generation": "4"
+  },
+  "Obstagoon": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/862.png",
+    "generation": "8"
+  },
+  "Annihilape": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/979.png",
+    "generation": "9"
+  },
+  "Loudred": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/294.png",
+    "generation": "3"
+  },
+  "Wingull": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/278.png",
+    "generation": "3"
+  },
+  "Omastar": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/139.png",
+    "generation": "1"
+  },
+  "Cottonee": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/546.png",
+    "generation": "5"
+  },
+  "Goodra": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/706.png",
+    "generation": "6"
+  },
+  "Morpeko-Full-Belly": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/877.png",
+    "generation": "8"
+  },
+  "Quaxwell": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/913.png",
+    "generation": "9"
+  },
+  "Cosmog": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/789.png",
+    "generation": "7"
+  },
+  "Quilava": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/156.png",
+    "generation": "2"
+  },
+  "Chi-Yu": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1004.png",
+    "generation": "9"
+  },
+  "Metagross": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/376.png",
+    "generation": "3"
+  },
+  "Patrat": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/504.png",
+    "generation": "5"
+  },
+  "Growlithe-Hisui": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10229.png",
+    "generation": "8"
+  },
+  "Victreebel": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/71.png",
+    "generation": "1"
+  },
+  "Slowking-Galar": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10172.png",
+    "generation": "8"
+  },
+  "Sealeo": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/364.png",
+    "generation": "3"
+  },
+  "Toxtricity-Low-Key": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10184.png",
+    "generation": "8"
+  },
+  "Feraligatr": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/160.png",
+    "generation": "2"
+  },
+  "Deino": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/633.png",
+    "generation": "5"
+  },
+  "Machop": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/66.png",
+    "generation": "1"
+  },
+  "Crustle": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/558.png",
+    "generation": "5"
+  },
+  "Phantump": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/708.png",
+    "generation": "6"
+  },
+  "Meloetta-Pirouette": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10018.png",
+    "generation": "5"
+  },
+  "Scorbunny": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/813.png",
+    "generation": "8"
+  },
+  "Grotle": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/388.png",
+    "generation": "4"
+  },
+  "Boltund": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/836.png",
+    "generation": "8"
+  },
+  "Vullaby": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/629.png",
+    "generation": "5"
+  },
+  "Venusaur": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png",
+    "generation": "1"
+  },
+  "Koffing": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/109.png",
+    "generation": "1"
+  },
+  "Petilil": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/548.png",
+    "generation": "5"
+  },
+  "Arcanine": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/59.png",
+    "generation": "1"
+  },
+  "Mandibuzz": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/630.png",
+    "generation": "5"
+  },
+  "Meowscarada": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/908.png",
+    "generation": "9"
+  },
+  "Meditite": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/307.png",
+    "generation": "3"
+  },
+  "Bruxish": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/779.png",
+    "generation": "7"
+  },
+  "Yanma": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/193.png",
+    "generation": "2"
+  },
+  "Jigglypuff": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/39.png",
+    "generation": "1"
+  },
+  "Slowbro-Galar": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10165.png",
+    "generation": "8"
+  },
+  "Yamper": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/835.png",
+    "generation": "8"
+  },
+  "Beartic": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/614.png",
+    "generation": "5"
+  },
+  "Oricorio-Sensu": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10125.png",
+    "generation": "7"
+  },
+  "Slowking": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/199.png",
+    "generation": "2"
+  },
+  "Blacephalon": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/806.png",
+    "generation": "7"
+  },
+  "Larvitar": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/246.png",
+    "generation": "2"
+  },
+  "Marshtomp": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/259.png",
+    "generation": "3"
+  },
+  "Trumbeak": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/732.png",
+    "generation": "7"
+  },
+  "Sliggoo-Hisui": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10241.png",
+    "generation": "8"
+  },
+  "Tsareena": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/763.png",
+    "generation": "7"
+  },
+  "Armaldo": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/348.png",
+    "generation": "3"
+  },
+  "Persian-Alola": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10108.png",
+    "generation": "7"
+  },
+  "Treecko": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/252.png",
+    "generation": "3"
+  },
+  "Hippowdon": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/450.png",
+    "generation": "4"
+  },
+  "Spoink": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/325.png",
+    "generation": "3"
+  },
+  "Flareon": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/136.png",
+    "generation": "1"
+  },
+  "Unfezant": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/521.png",
+    "generation": "5"
+  },
+  "Pidgeotto": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/17.png",
+    "generation": "1"
+  },
+  "Buizel": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/418.png",
+    "generation": "4"
+  },
+  "Rattata": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/19.png",
+    "generation": "1"
+  },
+  "Combee": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/415.png",
+    "generation": "4"
+  },
+  "Frigibax": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/996.png",
+    "generation": "9"
+  },
+  "Keldeo-Resolute": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10024.png",
+    "generation": "5"
+  },
+  "Carracosta": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/565.png",
+    "generation": "5"
+  },
+  "Cinderace": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/815.png",
+    "generation": "8"
+  },
+  "Ninjask": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/291.png",
+    "generation": "3"
+  },
+  "Manaphy": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/490.png",
+    "generation": "4"
+  },
+  "Volcanion": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/721.png",
+    "generation": "6"
+  },
+  "Rockruff": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/744.png",
+    "generation": "7"
+  },
+  "Hoppip": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/187.png",
+    "generation": "2"
+  },
+  "Cacturne": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/332.png",
+    "generation": "3"
+  },
+  "Chimecho": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/358.png",
+    "generation": "3"
+  },
+  "Roggenrola": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/524.png",
+    "generation": "5"
+  },
+  "Magnezone": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/462.png",
+    "generation": "4"
+  },
+  "Ceruledge": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/937.png",
+    "generation": "9"
+  },
+  "Slugma": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/218.png",
+    "generation": "2"
+  },
+  "Palafin-Zero": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/964.png",
+    "generation": "9"
+  },
+  "Kabuto": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/140.png",
+    "generation": "1"
+  },
+  "Arboliva": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/930.png",
+    "generation": "9"
+  },
+  "Slowpoke-Galar": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10164.png",
+    "generation": "8"
+  },
+  "Mankey": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/56.png",
+    "generation": "1"
+  },
+  "Crobat": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/169.png",
+    "generation": "2"
+  },
+  "Nidoran-F": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/29.png",
+    "generation": "1"
+  },
+  "Heatran": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/485.png",
+    "generation": "4"
+  },
+  "Froakie": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/656.png",
+    "generation": "6"
+  },
+  "Glameow": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/431.png",
+    "generation": "4"
+  },
+  "Snivy": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/495.png",
+    "generation": "5"
+  },
+  "Psyduck": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/54.png",
+    "generation": "1"
+  },
+  "Diggersby": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/660.png",
+    "generation": "6"
+  },
+  "Bonsly": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/438.png",
+    "generation": "4"
+  },
+  "Tinkatink": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/957.png",
+    "generation": "9"
+  },
+  "Quagsire": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/195.png",
+    "generation": "2"
+  },
+  "Vibrava": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/329.png",
+    "generation": "3"
+  },
+  "Alcremie": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/869.png",
+    "generation": "8"
+  },
+  "Spinarak": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/167.png",
+    "generation": "2"
+  },
+  "Simipour": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/516.png",
+    "generation": "5"
+  },
+  "Falinks": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/870.png",
+    "generation": "8"
+  },
+  "Illumise": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/314.png",
+    "generation": "3"
+  },
+  "Walrein": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/365.png",
+    "generation": "3"
+  },
+  "Silcoon": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/266.png",
+    "generation": "3"
+  },
+  "Qwilfish": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/211.png",
+    "generation": "2"
+  },
+  "Beheeyem": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/606.png",
+    "generation": "5"
+  },
+  "Wimpod": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/767.png",
+    "generation": "7"
+  },
+  "Phanpy": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/231.png",
+    "generation": "2"
+  },
+  "Feebas": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/349.png",
+    "generation": "3"
+  },
+  "Hitmonlee": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/106.png",
+    "generation": "1"
+  },
+  "Fletchinder": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/662.png",
+    "generation": "6"
+  },
+  "Rampardos": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/409.png",
+    "generation": "4"
+  },
+  "Zubat": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/41.png",
+    "generation": "1"
+  },
+  "Taillow": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/276.png",
+    "generation": "3"
+  },
+  "Dunsparce": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/206.png",
+    "generation": "2"
+  },
+  "Dewgong": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/87.png",
+    "generation": "1"
+  },
+  "Delcatty": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/301.png",
+    "generation": "3"
+  },
+  "Swinub": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/220.png",
+    "generation": "2"
+  },
+  "Zamazenta": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/889.png",
+    "generation": "8"
+  },
+  "Dolliv": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/929.png",
+    "generation": "9"
+  },
+  "Buneary": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/427.png",
+    "generation": "4"
+  },
+  "Capsakid": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/951.png",
+    "generation": "9"
+  },
+  "Cutiefly": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/742.png",
+    "generation": "7"
+  },
+  "Swampert": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/260.png",
+    "generation": "3"
+  },
+  "Drakloak": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/886.png",
+    "generation": "8"
+  },
+  "Bellsprout": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/69.png",
+    "generation": "1"
+  },
+  "Spinda": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/327.png",
+    "generation": "3"
+  },
+  "Combusken": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/256.png",
+    "generation": "3"
+  },
+  "Pignite": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/499.png",
+    "generation": "5"
+  },
+  "Bramblin": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/946.png",
+    "generation": "9"
+  },
+  "Blastoise": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png",
+    "generation": "1"
+  },
+  "Helioptile": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/694.png",
+    "generation": "6"
+  },
+  "Beautifly": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/267.png",
+    "generation": "3"
+  },
+  "Monferno": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/391.png",
+    "generation": "4"
+  },
+  "Appletun": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/842.png",
+    "generation": "8"
+  },
+  "Goomy": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/704.png",
+    "generation": "6"
+  },
+  "Nidorina": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/30.png",
+    "generation": "1"
+  },
+  "Sentret": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/161.png",
+    "generation": "2"
+  },
+  "Togetic": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/176.png",
+    "generation": "2"
+  },
+  "Dedenne": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/702.png",
+    "generation": "6"
+  },
+  "Gastrodon": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/423.png",
+    "generation": "4"
+  },
+  "Garchomp": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/445.png",
+    "generation": "4"
+  },
+  "Bulbasaur": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
+    "generation": "1"
+  },
+  "Rhyperior": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/464.png",
+    "generation": "4"
+  },
+  "Typhlosion": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/157.png",
+    "generation": "2"
+  },
+  "Graveler-Alola": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10110.png",
+    "generation": "7"
+  },
+  "Pidgeot": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/18.png",
+    "generation": "1"
+  },
+  "Raichu-Alola": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10100.png",
+    "generation": "7"
+  },
+  "Mr-Mime-Galar": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10168.png",
+    "generation": "8"
+  },
+  "Meowth-Galar": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10161.png",
+    "generation": "8"
+  },
+  "Kabutops": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/141.png",
+    "generation": "1"
+  },
+  "Bergmite": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/712.png",
+    "generation": "6"
+  },
+  "Hatenna": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/856.png",
+    "generation": "8"
+  },
+  "Lechonk": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/915.png",
+    "generation": "9"
+  },
+  "Nymble": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/919.png",
+    "generation": "9"
+  },
+  "Wooper-Paldea": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10253.png",
+    "generation": "9"
+  },
+  "Dragalge": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/691.png",
+    "generation": "6"
+  },
+  "Aegislash-Shield": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/681.png",
+    "generation": "6"
+  },
+  "Rillaboom": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/812.png",
+    "generation": "8"
+  },
+  "Crabrawler": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/739.png",
+    "generation": "7"
+  },
+  "Sizzlipede": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/850.png",
+    "generation": "8"
+  },
+  "Mareanie": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/747.png",
+    "generation": "7"
+  },
+  "Staravia": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/397.png",
+    "generation": "4"
+  },
+  "Ledyba": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/165.png",
+    "generation": "2"
+  },
+  "Chien-Pao": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1002.png",
+    "generation": "9"
+  },
+  "Clobbopus": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/852.png",
+    "generation": "8"
+  },
+  "Roselia": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/315.png",
+    "generation": "3"
+  },
+  "Koraidon": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1007.png",
+    "generation": "9"
+  },
+  "Venonat": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/48.png",
+    "generation": "1"
+  },
+  "Farfetchd": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/83.png",
+    "generation": "1"
+  },
+  "Regice": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/378.png",
+    "generation": "3"
+  },
+  "Klink": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/599.png",
+    "generation": "5"
+  },
+  "Herdier": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/507.png",
+    "generation": "5"
+  },
+  "Zweilous": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/634.png",
+    "generation": "5"
+  },
+  "Zorua-Hisui": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10238.png",
+    "generation": "8"
+  },
+  "Spewpa": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/665.png",
+    "generation": "6"
+  },
+  "Mienfoo": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/619.png",
+    "generation": "5"
+  },
+  "Metapod": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/11.png",
+    "generation": "1"
+  },
+  "Baxcalibur": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/998.png",
+    "generation": "9"
+  },
+  "Houndour": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/228.png",
+    "generation": "2"
+  },
+  "Seismitoad": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/537.png",
+    "generation": "5"
+  },
+  "Revavroom": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/966.png",
+    "generation": "9"
+  },
+  "Growlithe": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/58.png",
+    "generation": "1"
+  },
+  "Toxel": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/848.png",
+    "generation": "8"
+  },
+  "Electrode-Hisui": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10232.png",
+    "generation": "8"
+  },
+  "Kleavor": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/900.png",
+    "generation": "8"
+  },
+  "Elgyem": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/605.png",
+    "generation": "5"
+  },
+  "Liepard": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/510.png",
+    "generation": "5"
+  },
+  "Zekrom": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/644.png",
+    "generation": "5"
+  },
+  "Fomantis": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/753.png",
+    "generation": "7"
+  },
+  "Muk-Alola": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10113.png",
+    "generation": "7"
+  },
+  "Corsola-Galar": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10173.png",
+    "generation": "8"
+  },
+  "Kyogre": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/382.png",
+    "generation": "3"
+  },
+  "Machamp": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/68.png",
+    "generation": "1"
+  },
+  "Gogoat": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/673.png",
+    "generation": "6"
+  },
+  "Gothitelle": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/576.png",
+    "generation": "5"
+  },
+  "Weezing-Galar": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10167.png",
+    "generation": "8"
+  },
+  "Whirlipede": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/544.png",
+    "generation": "5"
+  },
+  "Sharpedo": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/319.png",
+    "generation": "3"
+  },
+  "Camerupt": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/323.png",
+    "generation": "3"
+  },
+  "Cranidos": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/408.png",
+    "generation": "4"
+  },
+  "Oddish": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/43.png",
+    "generation": "1"
+  },
+  "Luvdisc": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/370.png",
+    "generation": "3"
+  },
+  "Raichu": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/26.png",
+    "generation": "1"
+  },
+  "Regirock": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/377.png",
+    "generation": "3"
+  },
+  "Doublade": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/680.png",
+    "generation": "6"
+  },
+  "Togedemaru": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/777.png",
+    "generation": "7"
+  },
+  "Wooloo": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/831.png",
+    "generation": "8"
+  },
+  "Omanyte": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/138.png",
+    "generation": "1"
+  },
+  "Rotom": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/479.png",
+    "generation": "4"
+  },
+  "Kubfu": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/891.png",
+    "generation": "8"
+  },
+  "Jumpluff": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/189.png",
+    "generation": "2"
+  },
+  "Tadbulb": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/938.png",
+    "generation": "9"
+  },
+  "Voltorb-Hisui": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10231.png",
+    "generation": "8"
+  },
+  "Rhydon": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/112.png",
+    "generation": "1"
+  },
+  "Cinccino": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/573.png",
+    "generation": "5"
+  },
+  "Piloswine": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/221.png",
+    "generation": "2"
+  },
+  "Anorith": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/347.png",
+    "generation": "3"
+  },
+  "Rabsca": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/954.png",
+    "generation": "9"
+  },
+  "Diglett-Alola": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10105.png",
+    "generation": "7"
+  },
+  "Probopass": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/476.png",
+    "generation": "4"
+  },
+  "Cryogonal": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/615.png",
+    "generation": "5"
+  },
+  "Dhelmise": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/781.png",
+    "generation": "7"
+  },
+  "Wyrdeer": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/899.png",
+    "generation": "8"
+  },
+  "Eelektrik": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/603.png",
+    "generation": "5"
+  },
+  "Tinkaton": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/959.png",
+    "generation": "9"
+  },
+  "Tatsugiri-Curly": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/978.png",
+    "generation": "9"
+  },
+  "Flaaffy": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/180.png",
+    "generation": "2"
+  },
+  "Farigiraf": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/981.png",
+    "generation": "9"
+  },
+  "Piplup": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/393.png",
+    "generation": "4"
+  },
+  "Shiftry": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/275.png",
+    "generation": "3"
+  },
+  "Linoone": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/264.png",
+    "generation": "3"
+  },
+  "Poliwhirl": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/61.png",
+    "generation": "1"
+  },
+  "Gardevoir": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/282.png",
+    "generation": "3"
+  },
+  "Marill": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/183.png",
+    "generation": "2"
+  },
+  "Bellossom": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/182.png",
+    "generation": "2"
+  },
+  "Boldore": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/525.png",
+    "generation": "5"
+  },
+  "Krookodile": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/553.png",
+    "generation": "5"
+  },
+  "Klang": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/600.png",
+    "generation": "5"
+  },
+  "Kingler": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/99.png",
+    "generation": "1"
+  },
+  "Ekans": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/23.png",
+    "generation": "1"
+  },
+  "Calyrex": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/898.png",
+    "generation": "8"
+  },
+  "Scraggy": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/559.png",
+    "generation": "5"
+  },
+  "Meltan": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/808.png",
+    "generation": "7"
+  },
+  "Ampharos": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/181.png",
+    "generation": "2"
+  },
+  "Corviknight": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/823.png",
+    "generation": "8"
+  },
+  "Pheromosa": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/795.png",
+    "generation": "7"
+  },
+  "Carvanha": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/318.png",
+    "generation": "3"
+  },
+  "Pancham": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/674.png",
+    "generation": "6"
+  },
+  "Watchog": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/505.png",
+    "generation": "5"
+  },
+  "Wailord": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/321.png",
+    "generation": "3"
+  },
+  "Starmie": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/121.png",
+    "generation": "1"
+  },
+  "Registeel": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/379.png",
+    "generation": "3"
+  },
+  "Magearna": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/801.png",
+    "generation": "7"
+  },
+  "Eiscue-Ice": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/875.png",
+    "generation": "8"
+  },
+  "Marowak-Alola": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10115.png",
+    "generation": "7"
+  },
+  "Karrablast": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/588.png",
+    "generation": "5"
+  },
+  "Trevenant": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/709.png",
+    "generation": "6"
+  },
+  "Terrakion": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/639.png",
+    "generation": "5"
+  },
+  "Stufful": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/759.png",
+    "generation": "7"
+  },
+  "Drifloon": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/425.png",
+    "generation": "4"
+  },
+  "Slurpuff": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/685.png",
+    "generation": "6"
+  },
+  "Beedrill": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/15.png",
+    "generation": "1"
+  },
+  "Bronzong": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/437.png",
+    "generation": "4"
+  },
+  "Armarouge": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/936.png",
+    "generation": "9"
+  },
+  "Haunter": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/93.png",
+    "generation": "1"
+  },
+  "Miltank": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/241.png",
+    "generation": "2"
+  },
+  "Latias": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/380.png",
+    "generation": "3"
+  },
+  "Victini": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/494.png",
+    "generation": "5"
+  },
+  "Lugia": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/249.png",
+    "generation": "2"
+  },
+  "Munchlax": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/446.png",
+    "generation": "4"
+  },
+  "Litwick": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/607.png",
+    "generation": "5"
+  },
+  "Heatmor": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/631.png",
+    "generation": "5"
+  },
+  "Pangoro": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/675.png",
+    "generation": "6"
+  },
+  "Palpitoad": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/536.png",
+    "generation": "5"
+  },
+  "Perrserker": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/863.png",
+    "generation": "8"
+  },
+  "Tandemaus": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/924.png",
+    "generation": "9"
+  },
+  "Numel": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/322.png",
+    "generation": "3"
+  },
+  "Noctowl": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/164.png",
+    "generation": "2"
+  },
+  "Marowak": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/105.png",
+    "generation": "1"
+  },
+  "Mantine": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/226.png",
+    "generation": "2"
+  },
+  "Seedot": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/273.png",
+    "generation": "3"
+  },
+  "Mesprit": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/481.png",
+    "generation": "4"
+  },
+  "Carnivine": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/455.png",
+    "generation": "4"
+  },
+  "Simisage": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/512.png",
+    "generation": "5"
+  },
+  "Rayquaza": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/384.png",
+    "generation": "3"
+  },
+  "Zebstrika": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/523.png",
+    "generation": "5"
+  },
+  "Tranquill": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/520.png",
+    "generation": "5"
+  },
+  "Slowpoke": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/79.png",
+    "generation": "1"
+  },
+  "Tornadus-Incarnate": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/641.png",
+    "generation": "5"
+  },
+  "Floette": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/670.png",
+    "generation": "6"
+  },
+  "Minior-Red-Meteor": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/774.png",
+    "generation": "7"
+  },
+  "Enamorus-Incarnate": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/905.png",
+    "generation": "8"
+  },
+  "Sprigatito": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/906.png",
+    "generation": "9"
+  },
+  "Joltik": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/595.png",
+    "generation": "5"
+  },
+  "Smoochum": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/238.png",
+    "generation": "2"
+  },
+  "Seaking": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/119.png",
+    "generation": "1"
+  },
+  "Smeargle": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/235.png",
+    "generation": "2"
+  },
+  "Corvisquire": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/822.png",
+    "generation": "8"
+  },
+  "Lilligant-Hisui": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10237.png",
+    "generation": "8"
+  },
+  "Crocalor": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/910.png",
+    "generation": "9"
+  },
+  "Luxray": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/405.png",
+    "generation": "4"
+  },
+  "Exeggcute": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/102.png",
+    "generation": "1"
+  },
+  "Escavalier": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/589.png",
+    "generation": "5"
+  },
+  "Meowth-Alola": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10107.png",
+    "generation": "7"
+  },
+  "Golduck": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/55.png",
+    "generation": "1"
+  },
+  "Type-Null": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/772.png",
+    "generation": "7"
+  },
+  "Crabominable": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/740.png",
+    "generation": "7"
+  },
+  "Bounsweet": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/761.png",
+    "generation": "7"
+  },
+  "Sneasler": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/903.png",
+    "generation": "8"
+  },
+  "Inteleon": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/818.png",
+    "generation": "8"
+  },
+  "Ribombee": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/743.png",
+    "generation": "7"
+  },
+  "Orthworm": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/968.png",
+    "generation": "9"
+  },
+  "Frillish": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/592.png",
+    "generation": "5"
+  },
+  "Grumpig": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/326.png",
+    "generation": "3"
+  },
+  "Dusknoir": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/477.png",
+    "generation": "4"
+  },
+  "Darmanitan-Galar-Zen": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10178.png",
+    "generation": "8"
+  },
+  "Drampa": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/780.png",
+    "generation": "7"
+  },
+  "Sandslash": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/28.png",
+    "generation": "1"
+  },
+  "Naclstack": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/933.png",
+    "generation": "9"
+  },
+  "Palossand": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/770.png",
+    "generation": "7"
+  },
+  "Decidueye": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/724.png",
+    "generation": "7"
+  },
+  "Houndoom": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/229.png",
+    "generation": "2"
+  },
+  "Cleffa": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/173.png",
+    "generation": "2"
+  },
+  "Croconaw": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/159.png",
+    "generation": "2"
+  },
+  "Magcargo": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/219.png",
+    "generation": "2"
+  },
+  "Cascoon": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/268.png",
+    "generation": "3"
+  },
+  "Alakazam": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/65.png",
+    "generation": "1"
+  },
+  "Arcanine-Hisui": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10230.png",
+    "generation": "8"
+  },
+  "Dracovish": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/882.png",
+    "generation": "8"
+  },
+  "Bayleef": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/153.png",
+    "generation": "2"
+  },
+  "Drizzile": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/817.png",
+    "generation": "8"
+  },
+  "Dugtrio-Alola": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10106.png",
+    "generation": "7"
+  },
+  "Milotic": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/350.png",
+    "generation": "3"
+  },
+  "Cacnea": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/331.png",
+    "generation": "3"
+  },
+  "Greavard": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/971.png",
+    "generation": "9"
+  },
+  "Copperajah": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/879.png",
+    "generation": "8"
+  },
+  "Barraskewda": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/847.png",
+    "generation": "8"
+  },
+  "Darumaka-Galar": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10176.png",
+    "generation": "8"
+  },
+  "Aurorus": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/699.png",
+    "generation": "6"
+  },
+  "Gengar": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/94.png",
+    "generation": "1"
+  },
+  "Ditto": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png",
+    "generation": "1"
+  },
+  "Diancie": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/719.png",
+    "generation": "6"
+  },
+  "Linoone-Galar": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10175.png",
+    "generation": "8"
+  },
+  "Pikachu": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png",
+    "generation": "1"
+  },
+  "Moltres-Galar": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10171.png",
+    "generation": "8"
+  },
+  "Duraludon": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/884.png",
+    "generation": "8"
+  },
+  "Sliggoo": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/705.png",
+    "generation": "6"
+  },
+  "Volcarona": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/637.png",
+    "generation": "5"
+  },
+  "Graveler": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/75.png",
+    "generation": "1"
+  },
+  "Golett": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/622.png",
+    "generation": "5"
+  },
+  "Durant": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/632.png",
+    "generation": "5"
+  },
+  "Purugly": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/432.png",
+    "generation": "4"
+  },
+  "Buzzwole": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/794.png",
+    "generation": "7"
+  },
+  "Torkoal": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/324.png",
+    "generation": "3"
+  },
+  "Oshawott": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/501.png",
+    "generation": "5"
+  },
+  "Impidimp": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/859.png",
+    "generation": "8"
+  },
+  "Heliolisk": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/695.png",
+    "generation": "6"
+  },
+  "Litleo": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/667.png",
+    "generation": "6"
+  },
+  "Rufflet": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/627.png",
+    "generation": "5"
+  },
+  "Aegislash-Blade": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10026.png",
+    "generation": "6"
+  },
+  "Magmar": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/126.png",
+    "generation": "1"
+  },
+  "Charcadet": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/935.png",
+    "generation": "9"
+  },
+  "Corphish": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/341.png",
+    "generation": "3"
+  },
+  "Doduo": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/84.png",
+    "generation": "1"
+  },
+  "Malamar": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/687.png",
+    "generation": "6"
+  },
+  "Shuckle": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/213.png",
+    "generation": "2"
+  },
+  "Claydol": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/344.png",
+    "generation": "3"
+  },
+  "Axew": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/610.png",
+    "generation": "5"
+  },
+  "Duosion": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/578.png",
+    "generation": "5"
+  },
+  "Klinklang": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/601.png",
+    "generation": "5"
+  },
+  "Hoothoot": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/163.png",
+    "generation": "2"
+  },
+  "Whismur": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/293.png",
+    "generation": "3"
+  },
+  "Urshifu-Single-Strike": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/892.png",
+    "generation": "8"
+  },
+  "Ursaluna": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/901.png",
+    "generation": "8"
+  },
+  "Comfey": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/764.png",
+    "generation": "7"
+  },
+  "Persian": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/53.png",
+    "generation": "1"
+  },
+  "Oranguru": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/765.png",
+    "generation": "7"
+  },
+  "Gloom": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/44.png",
+    "generation": "1"
+  },
+  "Tapu-Koko": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/785.png",
+    "generation": "7"
+  },
+  "Latios": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/381.png",
+    "generation": "3"
+  },
+  "Diglett": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/50.png",
+    "generation": "1"
+  },
+  "Grimmsnarl": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/861.png",
+    "generation": "8"
+  },
+  "Alomomola": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/594.png",
+    "generation": "5"
+  },
+  "Morelull": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/755.png",
+    "generation": "7"
+  },
+  "Pidove": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/519.png",
+    "generation": "5"
+  },
+  "Swalot": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/317.png",
+    "generation": "3"
+  },
+  "Heracross": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/214.png",
+    "generation": "2"
+  },
+  "Bunnelby": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/659.png",
+    "generation": "6"
+  },
+  "Glalie": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/362.png",
+    "generation": "3"
+  },
+  "Frosmoth": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/873.png",
+    "generation": "8"
+  },
+  "Kecleon": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/352.png",
+    "generation": "3"
+  },
+  "Slakoth": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/287.png",
+    "generation": "3"
+  },
+  "Slaking": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/289.png",
+    "generation": "3"
+  },
+  "Baltoy": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/343.png",
+    "generation": "3"
+  },
+  "Kingdra": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/230.png",
+    "generation": "2"
+  },
+  "Breloom": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/286.png",
+    "generation": "3"
+  },
+  "Hattrem": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/857.png",
+    "generation": "8"
+  },
+  "Leavanny": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/542.png",
+    "generation": "5"
+  },
+  "Rapidash": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/78.png",
+    "generation": "1"
+  },
+  "Honchkrow": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/430.png",
+    "generation": "4"
+  },
+  "Charmeleon": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png",
+    "generation": "1"
+  },
+  "Samurott": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/503.png",
+    "generation": "5"
+  },
+  "Xurkitree": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/796.png",
+    "generation": "7"
+  },
+  "Tepig": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/498.png",
+    "generation": "5"
+  },
+  "Aipom": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/190.png",
+    "generation": "2"
+  },
+  "Carbink": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/703.png",
+    "generation": "6"
+  },
+  "Hitmonchan": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/107.png",
+    "generation": "1"
+  },
+  "Musharna": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/518.png",
+    "generation": "5"
+  },
+  "Dewpider": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/751.png",
+    "generation": "7"
+  },
+  "Deoxys-Normal": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/386.png",
+    "generation": "3"
+  },
+  "Porygon2": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/233.png",
+    "generation": "2"
+  },
+  "Happiny": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/440.png",
+    "generation": "4"
+  },
+  "Shellos": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/422.png",
+    "generation": "4"
+  },
+  "Sobble": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/816.png",
+    "generation": "8"
+  },
+  "Hydrapple": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1019.png",
+    "generation": "9"
+  },
+  "Farfetchd-Galar": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10166.png",
+    "generation": "8"
+  },
+  "Machoke": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/67.png",
+    "generation": "1"
+  },
+  "Toxicroak": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/454.png",
+    "generation": "4"
+  },
+  "Seviper": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/336.png",
+    "generation": "3"
+  },
+  "Mamoswine": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/473.png",
+    "generation": "4"
+  },
+  "Poliwag": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/60.png",
+    "generation": "1"
+  },
+  "Shellder": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/90.png",
+    "generation": "1"
+  },
+  "Kricketune": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/402.png",
+    "generation": "4"
+  },
+  "Clamperl": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/366.png",
+    "generation": "3"
+  },
+  "Abomasnow": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/460.png",
+    "generation": "4"
+  },
+  "Totodile": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/158.png",
+    "generation": "2"
+  },
+  "Tangrowth": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/465.png",
+    "generation": "4"
+  },
+  "Dwebble": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/557.png",
+    "generation": "5"
+  },
+  "Calyrex-Ice": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10193.png",
+    "generation": "8"
+  },
+  "Darkrai": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/491.png",
+    "generation": "4"
+  },
+  "Poipole": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/803.png",
+    "generation": "7"
+  },
+  "Horsea": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/116.png",
+    "generation": "1"
+  },
+  "Melmetal": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/809.png",
+    "generation": "7"
+  },
+  "Electabuzz": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/125.png",
+    "generation": "1"
+  },
+  "Furret": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/162.png",
+    "generation": "2"
+  },
+  "Greedent": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/820.png",
+    "generation": "8"
+  },
+  "Lickilicky": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/463.png",
+    "generation": "4"
+  },
+  "Sudowoodo": {
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/185.png",
+    "generation": "2"
+  }
+}

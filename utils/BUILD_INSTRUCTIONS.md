@@ -2,12 +2,21 @@
 
 ## Quick Build Instructions
 
-### Option 1: Use the Build Script (Recommended)
+### Option 1: Use the Python Build Script (Recommended)
 ```bash
-./build.sh
+# From project root
+python build.py
+
+# OR from utils directory
+python utils/build_app.py
 ```
 
-### Option 2: Manual PyInstaller Command
+### Option 2: Use Shell Script
+```bash
+./utils/build.sh
+```
+
+### Option 3: Manual PyInstaller Command
 ```bash
 source .venv/bin/activate
 
@@ -15,9 +24,10 @@ pyinstaller \
   --name="Whos Your Pokemon" \
   --windowed \
   --onedir \
-  --icon="question_mark.icns" \
-  --add-data="pokemon_data.json:." \
-  --add-data="x_icon.png:." \
+  --icon="assets/question_mark.icns" \
+  --add-data="pokemon_data/pokemon_data.json:pokemon_data" \
+  --add-data="assets/x_icon.png:assets" \
+  --add-data="assets/question_mark.icns:assets" \
   --clean \
   --noconfirm \
   main.py

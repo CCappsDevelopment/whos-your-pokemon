@@ -281,6 +281,12 @@ class PokemonGuessGame:
         self.current_player = 1
         self.game_active = False
         
+        # Generation selection
+        self.selected_generations = set(['1', '2', '3', '4', '5', '6', '7', '8', '9'])  # All selected by default
+        self.generation_vars = {}
+        self.all_regions_var = None
+        self.filtered_pokemon_list = []
+        
         # Grid data
         self.player1_grid = []
         self.player2_grid = []
@@ -302,7 +308,7 @@ class PokemonGuessGame:
     def load_pokemon_data(self):
         """Load Pokémon data from the JSON file"""
         try:
-            with open(get_resource_path('pokemon_data.json'), 'r', encoding='utf-8') as f:
+            with open(get_resource_path('pokemon_data/pokemon_data.json'), 'r', encoding='utf-8') as f:
                 data = json.load(f)
             print(f"✅ Loaded {len(data)} Pokémon from data file")
             return data
@@ -322,7 +328,13 @@ class PokemonGuessGame:
             if pokemon_name not in self.pokemon_data:
                 return None
             
-            sprite_url = self.pokemon_data[pokemon_name]
+            # Handle both old format (string URL) and new format (dict with sprite_url)
+            pokemon_info = self.pokemon_data[pokemon_name]
+            if isinstance(pokemon_info, dict):
+                sprite_url = pokemon_info['sprite_url']
+            else:
+                sprite_url = pokemon_info  # Backward compatibility
+            
             response = requests.get(sprite_url, timeout=10)
             response.raise_for_status()
             
@@ -343,10 +355,30 @@ class PokemonGuessGame:
             print(f"❌ Error loading image for {pokemon_name}: {e}")
             return None
     
+    def load_logo_image(self, filename, max_width=400, max_height=150):
+        """Load and resize a logo image while maintaining aspect ratio"""
+        try:
+            image = Image.open(get_resource_path(f'assets/{filename}'))
+            
+            # Calculate scaling to fit within max dimensions while maintaining aspect ratio
+            original_width, original_height = image.size
+            width_ratio = max_width / original_width
+            height_ratio = max_height / original_height
+            scale_factor = min(width_ratio, height_ratio)
+            
+            new_width = int(original_width * scale_factor)
+            new_height = int(original_height * scale_factor)
+            
+            image = image.resize((new_width, new_height), Image.Resampling.LANCZOS)
+            return ImageTk.PhotoImage(image)
+        except Exception as e:
+            print(f"❌ Error loading logo {filename}: {e}")
+            return None
+
     def load_x_icon(self):
         """Load and prepare the X icon for elimination overlay"""
         try:
-            x_image = Image.open(get_resource_path('x_icon.png'))
+            x_image = Image.open(get_resource_path('assets/x_icon.png'))
             x_image = x_image.resize((96, 96), Image.Resampling.LANCZOS)
             self.x_icon = ImageTk.PhotoImage(x_image)
             print("✅ X icon loaded successfully")
@@ -387,15 +419,26 @@ class PokemonGuessGame:
         container = tk.Frame(self.root, bg='#3d7dca')
         container.pack(expand=True, fill='both')
         
-        # Title
-        title_label = tk.Label(
-            container,
-            text="Who's Your Pokémon!",
-            font=('Arial', 48, 'bold'),
-            fg='#003a70',
-            bg='#3d7dca'
-        )
-        title_label.pack(pady=(100, 50))
+        # Logo
+        logo_image = self.load_logo_image('whos-your-pokemon-logo.png', max_width=600, max_height=200)
+        if logo_image:
+            logo_label = tk.Label(
+                container,
+                image=logo_image,
+                bg='#3d7dca'
+            )
+            logo_label.image = logo_image  # Keep a reference to prevent garbage collection
+            logo_label.pack(pady=(100, 50))
+        else:
+            # Fallback to text if logo doesn't load
+            title_label = tk.Label(
+                container,
+                text="Who's Your Pokémon!",
+                font=('Arial', 48, 'bold'),
+                fg='#003a70',
+                bg='#3d7dca'
+            )
+            title_label.pack(pady=(100, 50))
         
         # Start button with rounded corners
         start_button = tk.Button(
@@ -418,7 +461,7 @@ class PokemonGuessGame:
     
     def start_game(self):
         """Begin the game setup process"""
-        self.setup_player(1)
+        self.show_generation_selection()
     
     def setup_player(self, player_num):
         """Setup screen for player selection"""
@@ -428,15 +471,36 @@ class PokemonGuessGame:
         container = tk.Frame(self.root, bg='#3d7dca')
         container.pack(expand=True, fill='both')
         
-        # Title
-        title_label = tk.Label(
+        # Logo
+        logo_image = self.load_logo_image('player-setup-logo.png', max_width=500, max_height=120)
+        if logo_image:
+            logo_label = tk.Label(
+                container,
+                image=logo_image,
+                bg='#3d7dca'
+            )
+            logo_label.image = logo_image  # Keep a reference to prevent garbage collection
+            logo_label.pack(pady=(50, 10))
+        else:
+            # Fallback to text if logo doesn't load
+            title_label = tk.Label(
+                container,
+                text="Player Setup",
+                font=('Arial', 36, 'bold'),
+                fg='#003a70',
+                bg='#3d7dca'
+            )
+            title_label.pack(pady=(50, 10))
+        
+        # Player number indicator
+        player_label = tk.Label(
             container,
-            text=f"Player {player_num} Setup",
-            font=('Arial', 36, 'bold'),
+            text=f"Player {player_num}",
+            font=('Arial', 24, 'bold'),
             fg='#003a70',
             bg='#3d7dca'
         )
-        title_label.pack(pady=(50, 30))
+        player_label.pack(pady=(0, 30))
         
         # Name input
         name_label = tk.Label(
@@ -477,7 +541,7 @@ class PokemonGuessGame:
         # Autocomplete entry for Pokemon selection
         pokemon_autocomplete = AutocompleteEntry(
             container,
-            values=self.pokemon_list,
+            values=self.filtered_pokemon_list,
             width=25
         )
         pokemon_autocomplete.pack(pady=10)
@@ -495,9 +559,9 @@ class PokemonGuessGame:
                 messagebox.showerror("Error", "Please choose a Pokémon!")
                 return
             
-            # Validate that the chosen Pokemon exists in our list
-            if chosen_pokemon not in self.pokemon_list:
-                messagebox.showerror("Error", f"'{chosen_pokemon}' is not a valid Pokémon. Please select from the suggestions.")
+            # Validate that the chosen Pokemon exists in our filtered list
+            if chosen_pokemon not in self.filtered_pokemon_list:
+                messagebox.showerror("Error", f"'{chosen_pokemon}' is not a valid Pokémon from the selected generations. Please select from the suggestions.")
                 return
             
             if player_num == 1:
@@ -542,15 +606,26 @@ class PokemonGuessGame:
         self.main_frame = tk.Frame(self.root, bg='#3d7dca')
         self.main_frame.pack(expand=True, fill='both', padx=10, pady=10)
         
-        # Title with increased font size (18 -> 22.5, rounded to 22)
-        title_label = tk.Label(
-            self.main_frame,
-            text="Who's Your Pokémon!",
-            font=('Arial', 22, 'bold'),
-            fg='#003a70',
-            bg='#3d7dca'
-        )
-        title_label.pack(pady=(0, 10))
+        # Logo
+        logo_image = self.load_logo_image('whos-your-pokemon-logo.png', max_width=400, max_height=80)
+        if logo_image:
+            logo_label = tk.Label(
+                self.main_frame,
+                image=logo_image,
+                bg='#3d7dca'
+            )
+            logo_label.image = logo_image  # Keep a reference to prevent garbage collection
+            logo_label.pack(pady=(0, 10))
+        else:
+            # Fallback to text if logo doesn't load
+            title_label = tk.Label(
+                self.main_frame,
+                text="Who's Your Pokémon!",
+                font=('Arial', 22, 'bold'),
+                fg='#003a70',
+                bg='#3d7dca'
+            )
+            title_label.pack(pady=(0, 10))
         
         # Create horizontal layout using pack with equal distribution
         game_frame = tk.Frame(self.main_frame, bg='#3d7dca')
@@ -677,8 +752,8 @@ class PokemonGuessGame:
         """Generate the Pokemon grids for both players"""
         print(f"Generating grids. Player 1 chose: {self.player1_chosen}, Player 2 chose: {self.player2_chosen}")
         
-        # Create Player 1's grid - select 24 random Pokémon from the full list
-        available_pokemon = self.pokemon_list.copy()
+        # Create Player 1's grid - select 24 random Pokémon from the filtered list
+        available_pokemon = self.filtered_pokemon_list.copy()
         
         # Ensure Player 1's chosen Pokemon is included
         if self.player1_chosen in available_pokemon:
@@ -689,8 +764,8 @@ class PokemonGuessGame:
         self.player1_grid.append(self.player1_chosen)
         random.shuffle(self.player1_grid)
         
-        # Create Player 2's grid - select 24 random Pokémon from the full list
-        available_pokemon = self.pokemon_list.copy()
+        # Create Player 2's grid - select 24 random Pokémon from the filtered list
+        available_pokemon = self.filtered_pokemon_list.copy()
         
         # Ensure Player 2's chosen Pokemon is included
         if self.player2_chosen in available_pokemon:
@@ -1002,6 +1077,17 @@ class PokemonGuessGame:
         container = tk.Frame(self.root, bg='#3d7dca')
         container.pack(expand=True, fill='both')
         
+        # Game Over Logo
+        logo_image = self.load_logo_image('game-over-logo.png', max_width=500, max_height=120)
+        if logo_image:
+            logo_label = tk.Label(
+                container,
+                image=logo_image,
+                bg='#3d7dca'
+            )
+            logo_label.image = logo_image  # Keep a reference to prevent garbage collection
+            logo_label.pack(pady=(50, 20))
+        
         # Result
         result_label = tk.Label(
             container,
@@ -1010,7 +1096,7 @@ class PokemonGuessGame:
             fg='#4CAF50' if 'Wins' in result else '#F44336',
             bg='#3d7dca'
         )
-        result_label.pack(pady=(100, 20))
+        result_label.pack(pady=(20, 20))
         
         # Message
         message_label = tk.Label(
@@ -1071,6 +1157,230 @@ class PokemonGuessGame:
     def run(self):
         """Start the game"""
         self.root.mainloop()
+    
+    def get_pokemon_generation(self, pokemon_name):
+        """Get the generation information for a Pokémon"""
+        if pokemon_name not in self.pokemon_data:
+            return "Unknown"
+        
+        pokemon_info = self.pokemon_data[pokemon_name]
+        if isinstance(pokemon_info, dict):
+            return pokemon_info.get('generation', 'Unknown')
+        else:
+            return "Unknown"  # Old format doesn't have generation info
+    
+    def get_pokemon_sprite_url(self, pokemon_name):
+        """Get the sprite URL for a Pokémon"""
+        if pokemon_name not in self.pokemon_data:
+            return None
+        
+        pokemon_info = self.pokemon_data[pokemon_name]
+        if isinstance(pokemon_info, dict):
+            return pokemon_info.get('sprite_url')
+        else:
+            return pokemon_info  # Old format is just the URL
+    
+    def filter_pokemon_by_generation(self):
+        """Filter Pokémon list based on selected generations"""
+        if not self.pokemon_data:
+            return []
+        
+        filtered_list = []
+        for pokemon_name, pokemon_info in self.pokemon_data.items():
+            if isinstance(pokemon_info, dict):
+                generation = pokemon_info.get('generation', '1')
+                if generation in self.selected_generations:
+                    filtered_list.append(pokemon_name)
+            else:
+                # Backward compatibility - include if no generation filtering
+                filtered_list.append(pokemon_name)
+        
+        return filtered_list
+    
+    def update_selected_generations(self):
+        """Update the selected generations set based on checkbox states"""
+        self.selected_generations.clear()
+        for gen, var in self.generation_vars.items():
+            if var.get():
+                self.selected_generations.add(gen)
+        
+        # Update filtered Pokémon list
+        self.filtered_pokemon_list = self.filter_pokemon_by_generation()
+        print(f"📊 Filtered to {len(self.filtered_pokemon_list)} Pokémon from {len(self.selected_generations)} generations")
+    
+    def show_generation_selection(self):
+        """Display the generation selection screen"""
+        self.clear_screen()
+        
+        # Main container
+        container = tk.Frame(self.root, bg='#3d7dca')
+        container.pack(expand=True, fill='both')
+        
+        # Logo
+        logo_image = self.load_logo_image('select-generations-logo.png', max_width=600, max_height=120)
+        if logo_image:
+            logo_label = tk.Label(
+                container,
+                image=logo_image,
+                bg='#3d7dca'
+            )
+            logo_label.image = logo_image  # Keep a reference to prevent garbage collection
+            logo_label.pack(pady=(50, 30))
+        else:
+            # Fallback to text if logo doesn't load
+            title_label = tk.Label(
+                container,
+                text="Select Pokémon Generations",
+                font=('Arial', 36, 'bold'),
+                fg='#003a70',
+                bg='#3d7dca'
+            )
+            title_label.pack(pady=(50, 30))
+        
+        # Subtitle
+        subtitle_label = tk.Label(
+            container,
+            text="Choose which generations to include in your game:",
+            font=('Arial', 16),
+            fg='#222222',
+            bg='#3d7dca'
+        )
+        subtitle_label.pack(pady=(0, 20))
+        
+        # Checkbox frame
+        checkbox_frame = tk.Frame(container, bg='#3d7dca')
+        checkbox_frame.pack(pady=20)
+        
+        # Generation data with regions
+        generation_data = [
+            ('1', 'I - Kanto'),
+            ('2', 'II - Johto'),
+            ('3', 'III - Hoenn'),
+            ('4', 'IV - Sinnoh'),
+            ('5', 'V - Unova'),
+            ('6', 'VI - Kalos'),
+            ('7', 'VII - Alola'),
+            ('8', 'VIII - Galar'),
+            ('9', 'IX - Paldea')
+        ]
+        
+        # Initialize generation variables
+        self.generation_vars = {}
+        self.all_regions_var = tk.BooleanVar(value=True)  # Start with all selected
+        
+        # "All Regions" checkbox
+        all_regions_frame = tk.Frame(checkbox_frame, bg='#3d7dca')
+        all_regions_frame.pack(pady=5, anchor='w')
+        
+        all_regions_cb = tk.Checkbutton(
+            all_regions_frame,
+            text="All Regions",
+            variable=self.all_regions_var,
+            font=('Arial', 14, 'bold'),
+            fg='#222222',
+            bg='#3d7dca',
+            selectcolor='#cccccc',
+            activebackground='#3d7dca',
+            activeforeground='#222222',
+            command=self.on_all_regions_changed
+        )
+        all_regions_cb.pack(side='left')
+        
+        # Separator
+        separator = tk.Frame(checkbox_frame, height=2, bg='#222222')
+        separator.pack(fill='x', pady=10)
+        
+        # Individual generation checkboxes
+        for gen_num, region_name in generation_data:
+            self.generation_vars[gen_num] = tk.BooleanVar(value=True)  # Start all selected
+            
+            gen_frame = tk.Frame(checkbox_frame, bg='#3d7dca')
+            gen_frame.pack(pady=2, anchor='w')
+            
+            cb = tk.Checkbutton(
+                gen_frame,
+                text=region_name,
+                variable=self.generation_vars[gen_num],
+                font=('Arial', 12),
+                fg='#222222',
+                bg='#3d7dca',
+                selectcolor='#cccccc',
+                activebackground='#3d7dca',
+                activeforeground='#222222',
+                command=self.on_generation_changed
+            )
+            cb.pack(side='left')
+        
+        # Button frame
+        button_frame = tk.Frame(container, bg='#3d7dca')
+        button_frame.pack(pady=30)
+        
+        # Confirm button
+        self.confirm_button = tk.Button(
+            button_frame,
+            text="Continue to Player Setup",
+            font=('Arial', 18, 'bold'),
+            bg='#ffcb05',
+            fg='#222222',
+            highlightbackground='#222222',
+            highlightcolor='#222222',
+            highlightthickness=2,
+            relief='solid',
+            borderwidth=2,
+            padx=30,
+            pady=15,
+            command=self.confirm_generation_selection,
+            cursor='hand2'
+        )
+        self.confirm_button.pack()
+        
+        # Update initial state
+        self.update_selected_generations()
+        self.update_confirm_button_state()
+    
+    def on_all_regions_changed(self):
+        """Handle All Regions checkbox change"""
+        if self.all_regions_var.get():
+            # Select all generations
+            for var in self.generation_vars.values():
+                var.set(True)
+        else:
+            # Deselect all generations
+            for var in self.generation_vars.values():
+                var.set(False)
+        
+        self.update_selected_generations()
+        self.update_confirm_button_state()
+    
+    def on_generation_changed(self):
+        """Handle individual generation checkbox change"""
+        # Check if all generations are selected
+        all_selected = all(var.get() for var in self.generation_vars.values())
+        
+        # Update All Regions checkbox accordingly
+        self.all_regions_var.set(all_selected)
+        
+        self.update_selected_generations()
+        self.update_confirm_button_state()
+    
+    def update_confirm_button_state(self):
+        """Enable/disable confirm button based on selection"""
+        has_selection = any(var.get() for var in self.generation_vars.values())
+        
+        if has_selection:
+            self.confirm_button.config(state='normal', bg='#ffcb05')
+        else:
+            self.confirm_button.config(state='disabled', bg='#cccccc')
+    
+    def confirm_generation_selection(self):
+        """Confirm generation selection and proceed to player setup"""
+        if self.selected_generations:
+            print(f"🎮 Selected generations: {sorted(self.selected_generations)}")
+            self.setup_player(1)
+        else:
+            messagebox.showwarning("No Selection", "Please select at least one generation!")
+    
+    # ...existing code...
 
 
 def main():
