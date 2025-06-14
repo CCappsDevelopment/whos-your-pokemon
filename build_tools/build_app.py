@@ -25,7 +25,7 @@ def build_app():
         "--windowed",  # No console window
         "--onedir",  # Create a directory with all files
         "--icon=assets/question_mark.icns",  # Use question mark as app icon
-        "--add-data=pokemon_data/pokemon_data.json:pokemon_data",  # Include Pokemon data in pokemon_data folder
+        "--add-data=data_sources/pokemon_data.json:data_sources",  # Include Pokemon data in data_sources folder
         "--add-data=assets:assets",  # Include all assets (logos, icons, etc.)
         "--clean",  # Clean cache before building
         "--noconfirm",  # Overwrite without asking
