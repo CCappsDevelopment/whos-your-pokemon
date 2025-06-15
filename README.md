@@ -14,6 +14,8 @@ A Python-based "Guess Who" inspired game where two players try to guess each oth
 - **Real-time Feedback**: Visual indicators for eliminated Pokémon and current player
 - **Multiple Win Conditions**: Win by correct guess or lose by eliminating your target
 - **Generation Selection**: Choose which Pokémon generations to include in the game
+- **Variant Selection**: Include regional variants, Mega evolutions, Gigantamax forms, and more
+- **Pokémon Selection Method**: Choose between randomized or manual selection (manual coming soon)
 
 ## Requirements
 
@@ -53,7 +55,8 @@ python3 main.py
 
 1. **Start**: Click the "Start" button on the main screen
 2. **Generation Selection**: Choose which Pokémon generations you want to include in the game
-3. **Player Setup**: Each player enters their name and chooses a Pokémon using the smart autocomplete search
+3. **Game Settings**: Configure variant inclusion and Pokemon selection method
+4. **Player Setup**: Each player enters their name and chooses a Pokémon using the smart autocomplete search
 4. **Gameplay**:
    - Players take turns eliminating Pokémon from their opponent's grid
    - Click on opponent's Pokémon sprites to mark them with a red 'X'
@@ -97,7 +100,7 @@ whos-your-pokemon/
 │   ├── screens/              # UI screens
 │   │   ├── base_screen.py
 │   │   ├── startup_screen.py
-│   │   ├── generation_selection_screen.py
+│   │   ├── game_settings_screen.py
 │   │   ├── player_setup_screen.py
 │   │   ├── game_screen.py
 │   │   └── game_over_screen.py
@@ -114,7 +117,7 @@ whos-your-pokemon/
 │
 ├── assets/                   # Game assets
 │   ├── whos-your-pokemon-logo.png
-│   ├── select-generations-logo.png
+│   ├── game-settings-logo.png
 │   ├── player-setup-logo.png
 │   ├── game-over-logo.png
 │   ├── question_mark.png

@@ -15,7 +15,7 @@ This document describes the refactored modular structure of the Pokemon Guess Ga
 │   │   ├── __init__.py
 │   │   ├── base_screen.py     # Base class for all screens
 │   │   ├── startup_screen.py  # Initial startup screen
-│   │   ├── generation_selection_screen.py  # Generation selection
+│   │   ├── game_settings_screen.py  # Game settings (generations, variants, selection)
 │   │   ├── player_setup_screen.py  # Player name and Pokemon selection
 │   │   ├── game_screen.py     # Main game interface
 │   │   └── game_over_screen.py  # End game results
@@ -126,3 +126,33 @@ python build.py
 3. Import where needed
 
 This modular structure makes the codebase much more maintainable and follows Python best practices for large tkinter applications.
+
+### Enhanced Game Settings System
+
+The `game_settings_screen.py` now provides comprehensive configuration options:
+
+#### Generation Selection
+- Choose specific Pokémon generations (I-IX)
+- Master "All Generations" checkbox for quick selection
+- Individual generation toggles with region names
+
+#### Variant Selection
+- Regional variants (Alolan, Galarian, Hisuian, Paldean)
+- Special forms (Mega Evolution, Gigantamax)
+- Unique Pokémon (Special Pikachus, Totem Pokémon, Paradox Pokémon)
+- Form and size variants
+- Master "All Variants" checkbox for easy management
+
+#### Pokémon Selection Method
+- **Randomize**: Automatically select 24 Pokémon for each player (current implementation)
+- **Manual**: Allow players to manually choose their Pokémon pool (coming soon)
+
+### Enhanced Data Management
+
+The Pokémon data now includes:
+- **Name**: Formatted Pokémon name
+- **Sprite URL**: Best available sprite from PokéAPI
+- **Generation**: Numeric generation (1-9, or -1 for unknown)
+- **Variant**: Classification of variant type (null for standard Pokémon)
+
+Data filtering supports both generation and variant criteria, always including standard (non-variant) Pokémon in gameplay.

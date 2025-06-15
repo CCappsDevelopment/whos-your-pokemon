@@ -4,7 +4,7 @@ Screens package for Pokemon Guess Game
 
 from .base_screen import BaseScreen
 from .startup_screen import StartupScreen
-from .generation_selection_screen import GenerationSelectionScreen
+from .game_settings_screen import GameSettingsScreen
 from .player_setup_screen import PlayerSetupScreen
 from .game_screen import GameScreen
 from .game_over_screen import GameOverScreen
@@ -12,7 +12,7 @@ from .game_over_screen import GameOverScreen
 __all__ = [
     'BaseScreen', 
     'StartupScreen', 
-    'GenerationSelectionScreen', 
+    'GameSettingsScreen', 
     'PlayerSetupScreen', 
     'GameScreen', 
     'GameOverScreen'

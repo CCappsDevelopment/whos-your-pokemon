@@ -8,7 +8,7 @@ import random
 from ..data import PokemonDataManager
 from ..utils import ImageLoader
 from ..screens import (
-    StartupScreen, GenerationSelectionScreen, PlayerSetupScreen, 
+    StartupScreen, GameSettingsScreen, PlayerSetupScreen, 
     GameScreen, GameOverScreen
 )
 
@@ -34,6 +34,12 @@ class PokemonGuessGame:
         self.generation_vars = {}
         self.all_regions_var = None
         self.filtered_pokemon_list = []
+        
+        # Variant handling
+        self.variant_vars = {}
+        self.selected_variants = set()
+        self.all_variants_var = None
+        self.pokemon_selection_var = None
         
         # Grid data
         self.player1_grid = []
@@ -88,7 +94,7 @@ class PokemonGuessGame:
         
         # Initialize all screens
         self.startup_screen = StartupScreen(self.root, self)
-        self.generation_screen = GenerationSelectionScreen(self.root, self)
+        self.generation_screen = GameSettingsScreen(self.root, self)
         self.player_setup_screen = PlayerSetupScreen(self.root, self)
         self.game_screen = GameScreen(self.root, self)
         self.game_over_screen = GameOverScreen(self.root, self)
@@ -356,8 +362,8 @@ class PokemonGuessGame:
                 self.selected_generations.add(gen)
         
         # Update filtered Pokémon list
-        self.filtered_pokemon_list = self.data_manager.filter_pokemon_by_generation(self.selected_generations)
-        print(f"📊 Filtered to {len(self.filtered_pokemon_list)} Pokémon from {len(self.selected_generations)} generations")
+        self.update_filtered_pokemon_list()
+        print(f"📊 Selected generations: {len(self.selected_generations)} generations")
     
     def on_all_regions_changed(self):
         """Handle All Regions checkbox change"""
@@ -385,14 +391,77 @@ class PokemonGuessGame:
         self.update_confirm_button_state()
     
     def update_confirm_button_state(self):
-        """Enable/disable confirm button based on selection"""
-        has_selection = any(var.get() for var in self.generation_vars.values())
+        """Enable/disable confirm button based on selection and pokemon selection method"""
+        has_generation_selection = any(var.get() for var in self.generation_vars.values())
+        selection_method = self.pokemon_selection_var.get() if self.pokemon_selection_var else "randomize"
+        
+        # Button should be enabled if there's a generation selection and selection method is randomize
+        should_enable = has_generation_selection and selection_method == "randomize"
         
         if self.confirm_button:
-            if has_selection:
+            if should_enable:
                 self.confirm_button.config(state='normal', bg='#ffcb05')
             else:
                 self.confirm_button.config(state='disabled', bg='#cccccc')
+    
+    def update_selected_variants(self):
+        """Update the selected variants set based on checkbox states"""
+        self.selected_variants.clear()
+        for variant, var in self.variant_vars.items():
+            if var.get():
+                self.selected_variants.add(variant)
+        
+        # Update filtered Pokémon list based on both generations and variants
+        self.update_filtered_pokemon_list()
+        print(f"🔮 Selected variants: {len(self.selected_variants)} variant types")
+    
+    def on_all_variants_changed(self):
+        """Handle All Variants checkbox change"""
+        if self.all_variants_var.get():
+            # Select all variants
+            for var in self.variant_vars.values():
+                var.set(True)
+        else:
+            # Deselect all variants
+            for var in self.variant_vars.values():
+                var.set(False)
+        
+        self.update_selected_variants()
+        self.update_confirm_button_state()
+    
+    def on_variant_changed(self):
+        """Handle individual variant checkbox change"""
+        # Check if all variants are selected
+        all_selected = all(var.get() for var in self.variant_vars.values())
+        
+        # Update All Variants checkbox accordingly
+        self.all_variants_var.set(all_selected)
+        
+        self.update_selected_variants()
+        self.update_confirm_button_state()
+    
+    def on_pokemon_selection_changed(self, event=None):
+        """Handle Pokemon selection method change"""
+        selection_method = self.pokemon_selection_var.get()
+        
+        # Disable continue button if manual is selected (not yet implemented)
+        if selection_method == "manual":
+            if self.confirm_button:
+                self.confirm_button.config(state='disabled', bg='#cccccc')
+                messagebox.showinfo("Feature Coming Soon", 
+                                  "Manual Pokemon selection is not yet implemented. Please use 'randomize' for now.")
+                self.pokemon_selection_var.set("randomize")
+        
+        self.update_confirm_button_state()
+    
+    def update_filtered_pokemon_list(self):
+        """Update filtered Pokemon list based on both generations and variants"""
+        # This will be called by both generation and variant update methods
+        self.filtered_pokemon_list = self.data_manager.filter_pokemon_by_settings(
+            self.selected_generations, 
+            self.selected_variants
+        )
+        print(f"📊 Filtered to {len(self.filtered_pokemon_list)} Pokémon")
     
     def run(self):
         """Start the game"""

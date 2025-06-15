@@ -53,19 +53,62 @@ class PokemonDataManager:
         else:
             return pokemon_info  # Old format is just the URL
     
+    def get_pokemon_variant(self, pokemon_name):
+        """Get the variant information for a Pokémon"""
+        if pokemon_name not in self.pokemon_data:
+            return None
+        
+        pokemon_info = self.pokemon_data[pokemon_name]
+        if isinstance(pokemon_info, dict):
+            return pokemon_info.get('variant')
+        else:
+            return None  # Old format doesn't have variant info
+    
     def filter_pokemon_by_generation(self, selected_generations):
-        """Filter Pokémon list based on selected generations"""
+        """Filter Pokémon list based on selected generations (legacy method)"""
         if not self.pokemon_data:
             return []
         
         filtered_list = []
         for pokemon_name, pokemon_info in self.pokemon_data.items():
             if isinstance(pokemon_info, dict):
-                generation = pokemon_info.get('generation', '1')
-                if generation in selected_generations:
+                generation = pokemon_info.get('generation', 1)
+                generation_str = str(generation) if generation != -1 else 'Unknown'
+                
+                if generation_str in selected_generations or generation_str == 'Unknown':
                     filtered_list.append(pokemon_name)
             else:
                 # Backward compatibility - include if no generation filtering
+                filtered_list.append(pokemon_name)
+        
+        return filtered_list
+    
+    def filter_pokemon_by_settings(self, selected_generations, selected_variants):
+        """Filter Pokémon list based on selected generations and variants"""
+        if not self.pokemon_data:
+            return []
+        
+        filtered_list = []
+        for pokemon_name, pokemon_info in self.pokemon_data.items():
+            if isinstance(pokemon_info, dict):
+                # Check generation
+                generation = pokemon_info.get('generation', 1)
+                generation_str = str(generation) if generation != -1 else 'Unknown'
+                
+                if generation_str not in selected_generations and generation_str != 'Unknown':
+                    continue
+                
+                # Check variant - always include standard (non-variant) Pokemon
+                variant = pokemon_info.get('variant')
+                if variant is None:
+                    # Standard Pokemon - always include
+                    filtered_list.append(pokemon_name)
+                elif variant in selected_variants:
+                    # Variant Pokemon that matches selection
+                    filtered_list.append(pokemon_name)
+                # Skip variant Pokemon that don't match selection
+            else:
+                # Backward compatibility - include if no filtering
                 filtered_list.append(pokemon_name)
         
         return filtered_list
