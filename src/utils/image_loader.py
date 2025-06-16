@@ -2,10 +2,13 @@
 Image loading utilities for the Pokemon Guess Game
 """
 import tkinter as tk
-from PIL import Image, ImageTk
+from PIL import Image, ImageTk, ImageFile
 import requests
 from io import BytesIO
 from .resource_path import get_resource_path
+
+# Enable loading of truncated images to handle potentially problematic PNG files
+ImageFile.LOAD_TRUNCATED_IMAGES = True
 
 
 class ImageLoader:
@@ -53,22 +56,57 @@ class ImageLoader:
             return self.image_cache[pokemon_name]
         
         if not sprite_url:
+            print(f"❌ No sprite URL provided for {pokemon_name}")
             return None
         
         try:
             response = requests.get(sprite_url, timeout=10)
             response.raise_for_status()
             
-            image = Image.open(BytesIO(response.content))
-            image = image.resize(self.image_size, Image.Resampling.LANCZOS)
+            # Try multiple approaches to handle potentially problematic images
+            image = None
             
-            # Convert to RGBA if not already
-            if image.mode != 'RGBA':
-                image = image.convert('RGBA')
+            # Approach 1: Standard BytesIO method
+            try:
+                bio = BytesIO(response.content)
+                bio.seek(0)
+                image = Image.open(bio)
+            except Exception as e1:
+                # Approach 2: Try to save to temp file and load
+                try:
+                    import tempfile
+                    import os
+                    with tempfile.NamedTemporaryFile(suffix='.png', delete=False) as tmp:
+                        tmp.write(response.content)
+                        tmp_path = tmp.name
+                    
+                    image = Image.open(tmp_path)
+                    os.unlink(tmp_path)  # Clean up
+                    print(f"⚠️ Used fallback method for {pokemon_name}")
+                except Exception as e2:
+                    # Approach 3: Try with PIL's load_truncated_images option
+                    try:
+                        ImageFile.LOAD_TRUNCATED_IMAGES = True
+                        bio = BytesIO(response.content)
+                        bio.seek(0)
+                        image = Image.open(bio)
+                        print(f"⚠️ Used truncated image loading for {pokemon_name}")
+                    except Exception as e3:
+                        print(f"❌ All methods failed for {pokemon_name}: {e3}")
+                        return None
             
-            photo = ImageTk.PhotoImage(image)
-            self.image_cache[pokemon_name] = photo
-            return photo
+            if image:
+                # Process the image
+                image = image.resize(self.image_size, Image.Resampling.LANCZOS)
+                
+                # Convert to RGBA if not already
+                if image.mode != 'RGBA':
+                    image = image.convert('RGBA')
+                
+                photo = ImageTk.PhotoImage(image)
+                self.image_cache[pokemon_name] = photo
+                return photo
+            
         except Exception as e:
             print(f"❌ Error loading image for {pokemon_name}: {e}")
             return None

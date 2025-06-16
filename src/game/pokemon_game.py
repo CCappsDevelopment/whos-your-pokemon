@@ -74,20 +74,13 @@ class PokemonGuessGame:
         self.root = tk.Tk()
         self.root.title("Who's Your Pokémon!")
         
-        # Window size for 96x96 images with 100px buttons (6x4 grid)
-        self.root.geometry("1300x800")
+        # Set window to fullscreen by default
+        self.root.attributes('-fullscreen', True)
         self.root.configure(bg='#3d7dca')
         
-        # Center the window
-        self.root.update_idletasks()
-        width = self.root.winfo_width()
-        height = self.root.winfo_height()
-        x = (self.root.winfo_screenwidth() // 2) - (width // 2)
-        y = (self.root.winfo_screenheight() // 2) - (height // 2)
-        self.root.geometry(f"{width}x{height}+{x}+{y}")
-        
-        # Allow escape key to close the window
+        # Allow escape key to close the window and F11 to toggle fullscreen
         self.root.bind('<Escape>', lambda e: self.root.destroy())
+        self.root.bind('<F11>', self.toggle_fullscreen)
         
         # Load X icon after root window is created
         self.image_loader.load_x_icon()
@@ -106,8 +99,16 @@ class PokemonGuessGame:
         self.startup_screen.show()
     
     def start_game(self):
-        """Begin the game setup process"""
-        self.show_generation_selection()
+        """Begin the game setup process - go directly to player setup"""
+        self.setup_player(1)
+    
+    def show_settings(self):
+        """Display the game settings screen"""
+        self.generation_screen.show()
+    
+    def return_to_startup(self):
+        """Return to the startup screen"""
+        self.show_startup_screen()
     
     def show_generation_selection(self):
         """Display the generation selection screen"""
@@ -182,21 +183,21 @@ class PokemonGuessGame:
         
         # Update the visual representation on the target grid
         for row in buttons:
-            for button in row:
-                if button and hasattr(button, 'pokemon_name') and button.pokemon_name == pokemon:
+            for tile in row:
+                if tile and hasattr(tile, 'pokemon_name') and tile.pokemon_name == pokemon:
                     if pokemon in eliminated_set:
-                        # Show X overlay
+                        # Show X overlay on the image label
                         if self.image_loader.x_icon:
-                            button.configure(image=self.image_loader.x_icon)
-                            button.image = self.image_loader.x_icon
+                            tile.image_label.configure(image=self.image_loader.x_icon)
+                            tile.image_label.image = self.image_loader.x_icon
                     else:
-                        # Restore original image
+                        # Restore original image on the image label
                         sprite_url = self.data_manager.get_pokemon_sprite_url(pokemon)
                         if sprite_url:
                             image = self.image_loader.download_and_cache_image(pokemon, sprite_url)
                             if image:
-                                button.configure(image=image)
-                                button.image = image
+                                tile.image_label.configure(image=image)
+                                tile.image_label.image = image
         
         self.update_remaining_count()
     
@@ -219,6 +220,10 @@ class PokemonGuessGame:
             else:
                 self.player1_name_label.configure(bg='#E3F2FD', fg='#333')
                 self.player2_name_label.configure(bg='#4CAF50', fg='white')
+        
+        # Update grid clickability based on current turn
+        if self.game_screen and hasattr(self.game_screen, 'update_grid_clickability'):
+            self.game_screen.update_grid_clickability()
     
     def end_turn(self):
         """End current player's turn"""
@@ -463,6 +468,22 @@ class PokemonGuessGame:
         )
         print(f"📊 Filtered to {len(self.filtered_pokemon_list)} Pokémon")
     
+    def toggle_fullscreen(self, event=None):
+        """Toggle fullscreen mode"""
+        current_state = self.root.attributes('-fullscreen')
+        self.root.attributes('-fullscreen', not current_state)
+        
+        # If exiting fullscreen, set a reasonable window size and center it
+        if current_state:
+            self.root.geometry("1300x800")
+            # Center the window when exiting fullscreen
+            self.root.update_idletasks()
+            width = self.root.winfo_width()
+            height = self.root.winfo_height()
+            x = (self.root.winfo_screenwidth() // 2) - (width // 2)
+            y = (self.root.winfo_screenheight() // 2) - (height // 2)
+            self.root.geometry(f"{width}x{height}+{x}+{y}")
+
     def run(self):
         """Start the game"""
         self.root.mainloop()

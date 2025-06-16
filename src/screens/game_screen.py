@@ -159,18 +159,18 @@ class GameScreen(BaseScreen):
         # Set initial turn
         self.game.update_turn_indicator()
         print("Game screen layout complete. Updating turn indicator...")
+        
+        # Update grid clickability for initial turn
+        self.update_grid_clickability()
         print("Game screen creation finished!")
     
     def create_grid(self, parent, player):
-        """Create a 6x4 grid of Pokemon buttons with uniform sizing"""
+        """Create a 6x4 grid of Pokemon tiles with images and names"""
         grid_data = self.game.player1_grid if player == 1 else self.game.player2_grid
         button_list = []
         
         # Debug print to ensure this method is called
         print(f"Creating grid for player {player} with {len(grid_data)} Pokemon")
-        
-        # Fixed button size for uniform grid - 96px image + 4px padding (2px each side)
-        button_size = 100  # 96px image + 4px padding
         
         for row in range(4):
             button_row = []
@@ -179,35 +179,56 @@ class GameScreen(BaseScreen):
                 if pokemon_index < len(grid_data):
                     pokemon_name = grid_data[pokemon_index]
                     
-                    # Create button with exact size
-                    button = tk.Button(
+                    # Create a frame to hold the tile content
+                    tile_frame = tk.Frame(
                         parent,
-                        text="",  # No text, image only
-                        width=button_size,
-                        height=button_size,
+                        bg='#cccccc',
                         relief='solid',
                         borderwidth=2,
-                        bg='#cccccc',
-                        activebackground='#999999',
-                        command=lambda p=pokemon_name, target_player=player: self.game.toggle_pokemon(p, target_player)
+                        width=100,
+                        height=120,
+                        cursor='hand2'
                     )
+                    tile_frame.grid(row=row, column=col, padx=2, pady=2, sticky='nsew')
+                    tile_frame.grid_propagate(False)
                     
-                    # Position button in grid
-                    button.grid(row=row, column=col, padx=2, pady=2, sticky='nsew')
+                    # Create image label
+                    image_label = tk.Label(
+                        tile_frame,
+                        bg='#cccccc',
+                        borderwidth=0,
+                        highlightthickness=0
+                    )
+                    image_label.pack(side='top', pady=(2, 0))
+                    
+                    # Create name label
+                    name_label = tk.Label(
+                        tile_frame,
+                        text=pokemon_name,
+                        font=('Arial', 8, 'normal'),
+                        fg='black',
+                        bg='#cccccc',
+                        borderwidth=0,
+                        highlightthickness=0
+                    )
+                    name_label.pack(side='bottom', pady=(0, 2))
                     
                     # Load and set Pokemon image
                     sprite_url = self.game.data_manager.get_pokemon_sprite_url(pokemon_name)
                     if sprite_url:
                         image = self.game.image_loader.download_and_cache_image(pokemon_name, sprite_url)
                         if image:
-                            button.configure(image=image)
-                            button.image = image  # Keep reference
+                            image_label.configure(image=image)
+                            image_label.image = image
                     
-                    # Store button with Pokemon name for later reference
-                    button.pokemon_name = pokemon_name
-                    button_row.append(button)
+                    # Store references for later use
+                    tile_frame.pokemon_name = pokemon_name
+                    tile_frame.image_label = image_label
+                    tile_frame.name_label = name_label
+                    tile_frame.player = player
+                    button_row.append(tile_frame)
                     
-                    print(f"Created button for {pokemon_name} at ({row}, {col})")
+                    print(f"Created tile for {pokemon_name} at ({row}, {col})")
                 else:
                     button_row.append(None)
             
@@ -226,3 +247,40 @@ class GameScreen(BaseScreen):
             self.game.player2_buttons = button_list
         
         print(f"Player {player} buttons stored: {len(button_list)} rows")
+    
+    def update_grid_clickability(self):
+        """Update which grid tiles are clickable based on current player's turn"""
+        # Player 1's grid
+        for row in self.game.player1_buttons:
+            for tile in row:
+                if tile:
+                    # Player 1's grid is clickable when it's player 2's turn
+                    is_clickable = (self.game.current_player == 2)
+                    self.update_tile_clickability(tile, is_clickable)
+        
+        # Player 2's grid  
+        for row in self.game.player2_buttons:
+            for tile in row:
+                if tile:
+                    # Player 2's grid is clickable when it's player 1's turn
+                    is_clickable = (self.game.current_player == 1)
+                    self.update_tile_clickability(tile, is_clickable)
+    
+    def update_tile_clickability(self, tile, is_clickable):
+        """Update a single tile's clickability"""
+        if is_clickable:
+            # Make clickable
+            tile.configure(cursor='hand2')
+            click_cmd = lambda e, p=tile.pokemon_name, target_player=tile.player: self.game.toggle_pokemon(p, target_player)
+            tile.bind("<Button-1>", click_cmd)
+            tile.image_label.bind("<Button-1>", click_cmd)
+            tile.name_label.bind("<Button-1>", click_cmd)
+            
+            # No hover effects - keep tiles at consistent grey background
+        else:
+            # Make not clickable
+            tile.configure(cursor='')
+            # Unbind click events only
+            tile.unbind("<Button-1>")
+            tile.image_label.unbind("<Button-1>")
+            tile.name_label.unbind("<Button-1>")

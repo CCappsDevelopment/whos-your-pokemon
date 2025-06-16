@@ -37,9 +37,13 @@ class StartupScreen(BaseScreen):
             )
             title_label.pack(pady=(100, 50))
         
+        # Button container for vertical centered layout
+        button_frame = tk.Frame(self.container, bg='#3d7dca')
+        button_frame.pack(expand=True)
+        
         # Start button with rounded corners
         start_button = tk.Button(
-            self.container,
+            button_frame,
             text="Start",
             font=('Arial', 24, 'bold'),
             bg='#ffcb05',
@@ -54,4 +58,23 @@ class StartupScreen(BaseScreen):
             command=self.game.start_game,
             cursor='hand2'
         )
-        start_button.pack(pady=20)
+        start_button.pack(pady=(0, 15))
+        
+        # Settings button
+        settings_button = tk.Button(
+            button_frame,
+            text="Settings",
+            font=('Arial', 20, 'bold'),
+            bg='#E3F2FD',
+            fg='#222222',
+            highlightbackground='#222222',
+            highlightcolor='#222222',
+            highlightthickness=2,
+            relief='solid',
+            borderwidth=2,
+            padx=40,
+            pady=15,
+            command=self.game.show_settings,
+            cursor='hand2'
+        )
+        settings_button.pack()

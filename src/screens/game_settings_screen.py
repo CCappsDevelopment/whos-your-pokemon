@@ -78,12 +78,12 @@ class GameSettingsScreen(BaseScreen):
         # Create pokemon selection section below the divider
         self.create_pokemon_selection_section(content_frame)
         
-        # Confirm button - closer to the selection section
+        # Back button - returns to startup screen
         self.confirm_button = tk.Button(
             content_frame,
-            text="Continue to Player Setup",
+            text="Back",
             font=('Arial', 16, 'bold'),
-            bg='#ffcb05',
+            bg='#E3F2FD',
             fg='#222222',
             highlightbackground='#222222',
             highlightcolor='#222222',
@@ -326,11 +326,12 @@ class GameSettingsScreen(BaseScreen):
     
     
     def confirm_settings(self):
-        """Confirm game settings and proceed to player setup"""
+        """Confirm game settings and return to startup screen"""
         if self.game.selected_generations:
             print(f"🎮 Selected generations: {sorted(self.game.selected_generations)}")
             print(f"🔮 Selected variants: {sorted(self.game.selected_variants) if hasattr(self.game, 'selected_variants') else 'All'}")
             print(f"🎯 Pokemon selection method: {self.game.pokemon_selection_var.get()}")
-            self.game.setup_player(1)
+            # Return to startup screen with settings applied
+            self.game.return_to_startup()
         else:
             messagebox.showwarning("No Selection", "Please select at least one generation!")
