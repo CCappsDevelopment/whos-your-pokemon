@@ -14,8 +14,9 @@ class GameScreen(BaseScreen):
         self.clear_screen()
         self.game.game_active = True
         
-        # Generate grids
-        self.game.generate_grids()
+        # Generate grids only if they don't already exist (for manual selection)
+        if not self.game.player1_grid or not self.game.player2_grid:
+            self.game.generate_grids()
         
         # Main container
         self.game.main_frame = tk.Frame(self.root, bg='#3d7dca')

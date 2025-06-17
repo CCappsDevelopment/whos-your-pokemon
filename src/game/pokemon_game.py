@@ -1,5 +1,5 @@
 """
-Main Pokemon Guess Game class
+Main Pokemon Guess Game class - Complete Version
 """
 import tkinter as tk
 from tkinter import ttk, messagebox
@@ -9,7 +9,7 @@ from ..data import PokemonDataManager
 from ..utils import ImageLoader
 from ..screens import (
     StartupScreen, GameSettingsScreen, PlayerSetupScreen, 
-    GameScreen, GameOverScreen
+    GameScreen, GameOverScreen, PokemonGridSetupScreen
 )
 
 
@@ -52,6 +52,10 @@ class PokemonGuessGame:
         self.player1_eliminated = set()
         self.player2_eliminated = set()
         
+        # Manual selection state
+        self.manual_selection_grids = {}  # Store manually selected grids
+        self.current_setup_player = 1  # Track which player is setting up their grid
+        
         # UI components
         self.root = None
         self.main_frame = None
@@ -67,6 +71,7 @@ class PokemonGuessGame:
         self.startup_screen = None
         self.generation_screen = None
         self.player_setup_screen = None
+        self.pokemon_grid_setup_screen = None
         self.game_screen = None
         self.game_over_screen = None
         
@@ -92,6 +97,7 @@ class PokemonGuessGame:
         self.startup_screen = StartupScreen(self.root, self)
         self.generation_screen = GameSettingsScreen(self.root, self)
         self.player_setup_screen = PlayerSetupScreen(self.root, self)
+        self.pokemon_grid_setup_screen = PokemonGridSetupScreen(self.root, self)
         self.game_screen = GameScreen(self.root, self)
         self.game_over_screen = GameOverScreen(self.root, self)
         
@@ -122,39 +128,113 @@ class PokemonGuessGame:
     
     def setup_player(self, player_num):
         """Setup screen for player selection"""
-        self.player_setup_screen.show(player_num)
+        # Before showing player setup, check if we need manual grid selection
+        selection_method = self.pokemon_selection_var.get() if self.pokemon_selection_var else "randomize"
+        
+        if selection_method == "manual":
+            # If manual selection, first do the Pokemon choice, then grid setup
+            if player_num == 1 and not self.player1_chosen:
+                # Player 1 needs to choose their Pokemon first
+                self.player_setup_screen.show(player_num)
+            elif player_num == 1 and self.player1_chosen and player_num not in self.manual_selection_grids:
+                # Player 1 has chosen Pokemon, now set up grid
+                self.setup_player_grid(player_num)
+            elif player_num == 2 and not self.player2_chosen:
+                # Player 2 needs to choose their Pokemon first
+                self.player_setup_screen.show(player_num)
+            elif player_num == 2 and self.player2_chosen and player_num not in self.manual_selection_grids:
+                # Player 2 has chosen Pokemon, now set up grid
+                self.setup_player_grid(player_num)
+            else:
+                # Both players done, start game
+                self.start_main_game()
+        else:
+            # Regular randomized flow
+            self.player_setup_screen.show(player_num)
+    
+    def setup_player_grid(self, player_num):
+        """Show manual grid setup screen for a player"""
+        self.current_setup_player = player_num
+        
+        # Get player name and chosen Pokemon
+        if player_num == 1:
+            player_name = self.player1_name
+            chosen_pokemon = self.player1_chosen
+        else:
+            player_name = self.player2_name
+            chosen_pokemon = self.player2_chosen
+        
+        self.pokemon_grid_setup_screen.show(player_num, player_name, chosen_pokemon)
+    
+    def complete_player_grid_setup(self, player_num, selected_grid):
+        """Complete manual grid setup for a player and proceed to next step"""
+        # Store the manually selected grid
+        self.manual_selection_grids[player_num] = selected_grid
+        print(f"🎮 Player {player_num} completed manual grid setup with {len(selected_grid)} Pokemon")
+        
+        if player_num == 1:
+            # Player 1 finished, move to Player 2 setup
+            self.setup_player(2)
+        else:
+            # Player 2 finished, start the main game
+            self.start_main_game()
+    
+    def start_main_game(self):
+        """Start the main game with manually selected grids or generate random grids"""
+        selection_method = self.pokemon_selection_var.get() if self.pokemon_selection_var else "randomize"
+        
+        if selection_method == "manual" and self.manual_selection_grids:
+            # Use manually selected grids
+            self.player1_grid = self.manual_selection_grids.get(1, [])
+            self.player2_grid = self.manual_selection_grids.get(2, [])
+            print(f"🎮 Using manual grids - P1: {len(self.player1_grid)} Pokemon, P2: {len(self.player2_grid)} Pokemon")
+        else:
+            # Generate random grids as before
+            self.generate_grids()
+        
+        # Reset game state
+        self.player1_eliminated = set()
+        self.player2_eliminated = set()
+        self.current_player = 1
+        self.game_active = True
+        
+        # Create and show the game screen
+        self.create_game_screen()
     
     def create_game_screen(self):
         """Create the main game interface"""
         self.game_screen.show()
     
     def generate_grids(self):
-        """Generate the Pokemon grids for both players"""
+        """Generate the Pokemon grids for both players (only if not already set by manual selection)"""
         print(f"Generating grids. Player 1 chose: {self.player1_chosen}, Player 2 chose: {self.player2_chosen}")
         
-        # Create Player 1's grid - select 24 random Pokémon from the filtered list
-        available_pokemon = self.filtered_pokemon_list.copy()
+        # Only generate grids if they haven't been manually set
+        if not self.player1_grid:
+            # Create Player 1's grid - select 24 random Pokémon from the filtered list
+            available_pokemon = self.filtered_pokemon_list.copy()
+            
+            # Ensure Player 1's chosen Pokemon is included
+            if self.player1_chosen in available_pokemon:
+                available_pokemon.remove(self.player1_chosen)
+            
+            # Select 23 random Pokemon and add the chosen one
+            self.player1_grid = random.sample(available_pokemon, 23)
+            self.player1_grid.append(self.player1_chosen)
+            random.shuffle(self.player1_grid)
         
-        # Ensure Player 1's chosen Pokemon is included
-        if self.player1_chosen in available_pokemon:
-            available_pokemon.remove(self.player1_chosen)
-        
-        # Select 23 random Pokemon and add the chosen one
-        self.player1_grid = random.sample(available_pokemon, 23)
-        self.player1_grid.append(self.player1_chosen)
-        random.shuffle(self.player1_grid)
-        
-        # Create Player 2's grid - select 24 random Pokémon from the filtered list
-        available_pokemon = self.filtered_pokemon_list.copy()
-        
-        # Ensure Player 2's chosen Pokemon is included
-        if self.player2_chosen in available_pokemon:
-            available_pokemon.remove(self.player2_chosen)
-        
-        # Select 23 random Pokemon and add the chosen one
-        self.player2_grid = random.sample(available_pokemon, 23)
-        self.player2_grid.append(self.player2_chosen)
-        random.shuffle(self.player2_grid)
+        if not self.player2_grid:
+            # Create Player 2's grid - select 24 random Pokémon from the filtered list
+            available_pokemon = self.filtered_pokemon_list.copy()
+            
+            # Ensure Player 2's chosen Pokemon is included
+            if self.player2_chosen in available_pokemon:
+                available_pokemon.remove(self.player2_chosen)
+            
+            # Select 23 random Pokemon and add the chosen one
+            self.player2_grid = random.sample(available_pokemon, 23)
+            self.player2_grid.append(self.player2_chosen)
+            random.shuffle(self.player2_grid)
         
         print(f"Player 1 grid: {self.player1_grid[:6]}...")  # Show first 6
         print(f"Player 2 grid: {self.player2_grid[:6]}...")  # Show first 6
@@ -343,6 +423,7 @@ class PokemonGuessGame:
     
     def end_game(self, result, message):
         """End the game and show results"""
+        self.game_active = False
         self.game_over_screen = GameOverScreen(self.root, self)
         self.game_over_screen.show(result, message)
     
@@ -361,6 +442,10 @@ class PokemonGuessGame:
         self.player2_buttons = []
         self.player1_eliminated = set()
         self.player2_eliminated = set()
+        
+        # Reset manual selection state
+        self.manual_selection_grids = {}
+        self.current_setup_player = 1
         
         # Show startup screen
         self.show_startup_screen()
@@ -406,8 +491,8 @@ class PokemonGuessGame:
         has_generation_selection = any(var.get() for var in self.generation_vars.values())
         selection_method = self.pokemon_selection_var.get() if self.pokemon_selection_var else "randomize"
         
-        # Button should be enabled if there's a generation selection and selection method is randomize
-        should_enable = has_generation_selection and selection_method == "randomize"
+        # Button should be enabled if there's a generation selection
+        should_enable = has_generation_selection
         
         if self.confirm_button:
             if should_enable:
@@ -453,16 +538,10 @@ class PokemonGuessGame:
     
     def on_pokemon_selection_changed(self, event=None):
         """Handle Pokemon selection method change"""
-        selection_method = self.pokemon_selection_var.get()
+        selection_method = self.pokemon_selection_var.get() if self.pokemon_selection_var else "randomize"
+        print(f"🎯 Pokemon selection method changed to: {selection_method}")
         
-        # Disable continue button if manual is selected (not yet implemented)
-        if selection_method == "manual":
-            if self.confirm_button:
-                self.confirm_button.config(state='disabled', bg='#cccccc')
-                messagebox.showinfo("Feature Coming Soon", 
-                                  "Manual Pokemon selection is not yet implemented. Please use 'randomize' for now.")
-                self.pokemon_selection_var.set("randomize")
-        
+        # Update confirm button state for both manual and randomize
         self.update_confirm_button_state()
     
     def update_filtered_pokemon_list(self):

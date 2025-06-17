@@ -112,14 +112,22 @@ class PlayerSetupScreen(BaseScreen):
                 messagebox.showerror("Error", f"'{chosen_pokemon}' is not a valid Pokémon from the selected generations. Please select from the suggestions.")
                 return
             
-            if player_num == 1:
-                self.game.player1_name = name
-                self.game.player1_chosen = chosen_pokemon
-                self.game.setup_player(2)
+            # Check if manual selection is enabled
+            selection_method = self.game.pokemon_selection_var.get() if self.game.pokemon_selection_var else "randomize"
+            
+            if selection_method == "manual":
+                # Go to manual grid setup screen
+                self.game.pokemon_grid_setup_screen.show(player_num, name, chosen_pokemon)
             else:
-                self.game.player2_name = name
-                self.game.player2_chosen = chosen_pokemon
-                self.game.create_game_screen()
+                # Use original randomize logic
+                if player_num == 1:
+                    self.game.player1_name = name
+                    self.game.player1_chosen = chosen_pokemon
+                    self.game.setup_player(2)
+                else:
+                    self.game.player2_name = name
+                    self.game.player2_chosen = chosen_pokemon
+                    self.game.create_game_screen()
         
         submit_button = tk.Button(
             self.container,
