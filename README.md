@@ -169,10 +169,14 @@ whos-your-pokemon/
 │       └── [1,280+ Pokémon images]
 │
 ├── build_tools/              # Build and deployment tools
-│   ├── build_app.py
+│   ├── build_app.py          # macOS build script
+│   ├── build_cross_platform.py  # Cross-platform build script
+│   ├── build_windows.bat     # Windows build script
+│   ├── build_linux.sh        # Linux build script
 │   ├── build.sh
 │   ├── create_release.sh
-│   └── BUILD_INSTRUCTIONS.md
+│   ├── BUILD_INSTRUCTIONS.md
+│   └── CROSS_PLATFORM_BUILD.md  # Detailed cross-platform instructions
 │
 ├── build/                    # Build output directory
 ├── dist/                     # Distribution files
@@ -197,22 +201,61 @@ whos-your-pokemon/
 - **Local Asset Management**: Pre-downloaded Pokémon images for optimal performance
 - **Enhanced Autocomplete**: Visual suggestions with sprite previews and fuzzy search
 - **Manual Grid Setup**: Interactive grid builder with duplicate prevention
+- **Cross-Platform Support**: Builds available for macOS, Windows, and Linux
+- **Offline Capability**: All assets cached locally for internet-free gameplay
 
 ## Building Executable
 
-To create a standalone executable:
+### Quick Build (Platform-Specific)
+
+#### macOS
+```bash
+python3 build_tools/build_app.py
+```
+
+#### Windows
+```cmd
+build_tools\build_windows.bat
+```
+
+#### Linux
+```bash
+chmod +x build_tools/build_linux.sh
+./build_tools/build_linux.sh
+```
+
+### Cross-Platform Build
+
+For advanced cross-platform building, use the unified build script:
+
+```bash
+# Build for current platform
+python3 build_tools/build_cross_platform.py
+
+# Build for specific platform
+python3 build_tools/build_cross_platform.py --platform windows
+python3 build_tools/build_cross_platform.py --platform macos
+python3 build_tools/build_cross_platform.py --platform linux
+```
+
+### Manual PyInstaller Setup
 
 1. Install PyInstaller:
    ```bash
    pip install pyinstaller
    ```
 
-2. Run the build script:
-   ```bash
-   python3 build_tools/build_app.py
-   ```
+2. Run the appropriate build script for your platform (see above)
 
 The executable will be created in the `dist/` directory.
+
+### Build Output
+
+- **macOS**: `dist/Whos Your Pokemon.app` (~99MB)
+- **Windows**: `dist/Whos Your Pokemon/Whos Your Pokemon.exe` (~95MB)
+- **Linux**: `dist/Whos Your Pokemon/Whos Your Pokemon` (~90MB)
+
+For detailed cross-platform build instructions, see [`build_tools/CROSS_PLATFORM_BUILD.md`](build_tools/CROSS_PLATFORM_BUILD.md).
 
 ## Troubleshooting
 
