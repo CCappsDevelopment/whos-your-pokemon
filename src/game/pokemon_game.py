@@ -35,11 +35,14 @@ class PokemonGuessGame:
         self.all_regions_var = None
         self.filtered_pokemon_list = []
         
-        # Variant handling
+        # Variant handling - initialize with all variants selected by default
         self.variant_vars = {}
         self.selected_variants = set()
         self.all_variants_var = None
         self.pokemon_selection_var = None
+        
+        # Initialize selected_variants with all available variants
+        self._initialize_default_variants()
         
         # Grid data
         self.player1_grid = []
@@ -91,6 +94,9 @@ class PokemonGuessGame:
         self.player_setup_screen = PlayerSetupScreen(self.root, self)
         self.game_screen = GameScreen(self.root, self)
         self.game_over_screen = GameOverScreen(self.root, self)
+        
+        # Initialize the filtered Pokemon list with default settings (all generations/variants)
+        self.update_filtered_pokemon_list()
         
         self.show_startup_screen()
     
@@ -194,7 +200,7 @@ class PokemonGuessGame:
                         # Restore original image on the image label
                         sprite_url = self.data_manager.get_pokemon_sprite_url(pokemon)
                         if sprite_url:
-                            image = self.image_loader.download_and_cache_image(pokemon, sprite_url)
+                            image = self.image_loader.load_pokemon_image(pokemon, sprite_url)
                             if image:
                                 tile.image_label.configure(image=image)
                                 tile.image_label.image = image
@@ -232,9 +238,9 @@ class PokemonGuessGame:
         
         # Check if current player eliminated opponent's chosen Pokemon
         opponent_chosen = self.player2_chosen if self.current_player == 1 else self.player1_chosen
-        opponent_eliminated = self.player2_eliminated if self.current_player == 1 else self.player1_eliminated
+        current_player_eliminated = self.player1_eliminated if self.current_player == 1 else self.player2_eliminated
         
-        if opponent_chosen in opponent_eliminated:
+        if opponent_chosen in current_player_eliminated:
             # Current player loses
             current_player_name = self.player1_name if self.current_player == 1 else self.player2_name
             self.end_game(f"{current_player_name} Loses!", f"{current_player_name} accidentally eliminated their target!")
@@ -487,3 +493,23 @@ class PokemonGuessGame:
     def run(self):
         """Start the game"""
         self.root.mainloop()
+
+    def _initialize_default_variants(self):
+        """Initialize selected_variants with all available variants by default"""
+        try:
+            # Get all unique variants from the Pokemon data
+            all_variants = set()
+            for pokemon_name, pokemon_info in self.data_manager.pokemon_data.items():
+                if isinstance(pokemon_info, dict):
+                    variant = pokemon_info.get('variant')
+                    if variant:
+                        all_variants.add(variant)
+            
+            # Add all variants to selected_variants (default behavior: all variants enabled)
+            self.selected_variants = all_variants.copy()
+            print(f"🔮 Initialized with {len(self.selected_variants)} default variants")
+            
+        except Exception as e:
+            print(f"⚠️ Error initializing default variants: {e}")
+            # Fallback: empty set (no variants selected)
+            self.selected_variants = set()

@@ -216,7 +216,7 @@ class GameScreen(BaseScreen):
                     # Load and set Pokemon image
                     sprite_url = self.game.data_manager.get_pokemon_sprite_url(pokemon_name)
                     if sprite_url:
-                        image = self.game.image_loader.download_and_cache_image(pokemon_name, sprite_url)
+                        image = self.game.image_loader.load_pokemon_image(pokemon_name, sprite_url)
                         if image:
                             image_label.configure(image=image)
                             image_label.image = image

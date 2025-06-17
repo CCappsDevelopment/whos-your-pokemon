@@ -88,6 +88,8 @@ class PlayerSetupScreen(BaseScreen):
         pokemon_autocomplete = AutocompleteEntry(
             self.container,
             values=self.game.filtered_pokemon_list,
+            image_loader=self.game.image_loader,
+            data_manager=self.game.data_manager,
             width=25
         )
         pokemon_autocomplete.pack(pady=10)

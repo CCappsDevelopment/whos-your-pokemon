@@ -5,6 +5,7 @@ import tkinter as tk
 from PIL import Image, ImageTk, ImageFile
 import requests
 from io import BytesIO
+import os
 from .resource_path import get_resource_path
 
 # Enable loading of truncated images to handle potentially problematic PNG files
@@ -18,6 +19,7 @@ class ImageLoader:
         self.image_cache = {}
         self.x_icon = None
         self.image_size = (96, 96)
+        self.autocomplete_size = (64, 64)
     
     def load_logo_image(self, filename, max_width=400, max_height=150):
         """Load and resize a logo image while maintaining aspect ratio"""
@@ -50,16 +52,81 @@ class ImageLoader:
             print(f"❌ Error loading X icon: {e}")
             self.x_icon = None
     
-    def download_and_cache_image(self, pokemon_name, sprite_url):
-        """Download and cache a Pokémon sprite image"""
+    def load_pokemon_image(self, pokemon_name, sprite_url):
+        """Load a Pokémon sprite image (96x96), prioritizing local cache over remote downloads"""
         if pokemon_name in self.image_cache:
             return self.image_cache[pokemon_name]
         
-        if not sprite_url:
-            print(f"❌ No sprite URL provided for {pokemon_name}")
-            return None
+        # First, try to load from local cache
+        local_image = self._load_local_image_sized(pokemon_name, self.image_size)
+        if local_image:
+            self.image_cache[pokemon_name] = local_image
+            return local_image
         
+        # If local image not available, download from URL
+        if sprite_url:
+            downloaded_image = self._download_image_from_url_sized(pokemon_name, sprite_url, self.image_size)
+            if downloaded_image:
+                self.image_cache[pokemon_name] = downloaded_image
+                return downloaded_image
+        
+        print(f"❌ Failed to load image for {pokemon_name}")
+        return None
+    
+    def load_pokemon_image_autocomplete(self, pokemon_name, sprite_url):
+        """Load a Pokémon sprite image for autocomplete (64x64), prioritizing local cache"""
+        cache_key = f"{pokemon_name}_autocomplete"
+        
+        if cache_key in self.image_cache:
+            return self.image_cache[cache_key]
+        
+        # First, try to load from local cache
+        local_image = self._load_local_image_sized(pokemon_name, self.autocomplete_size)
+        if local_image:
+            self.image_cache[cache_key] = local_image
+            return local_image
+        
+        # If local image not available, download from URL
+        if sprite_url:
+            downloaded_image = self._download_image_from_url_sized(pokemon_name, sprite_url, self.autocomplete_size)
+            if downloaded_image:
+                self.image_cache[cache_key] = downloaded_image
+                return downloaded_image
+        
+        print(f"❌ Failed to load autocomplete image for {pokemon_name}")
+        return None
+    
+    def _load_local_image_sized(self, pokemon_name, size):
+        """Load a Pokémon image from local assets folder with specific size"""
         try:
+            # Try different possible filenames
+            possible_names = [
+                pokemon_name.lower().replace(' ', '_').replace('.', '').replace("'", ''),
+                pokemon_name.lower().replace(' ', '-').replace('.', '').replace("'", ''),
+                pokemon_name.lower()
+            ]
+            
+            for name in possible_names:
+                local_path = get_resource_path(f'assets/pokemon_images/{name}.png')
+                if os.path.exists(local_path):
+                    image = Image.open(local_path)
+                    image = image.resize(size, Image.Resampling.LANCZOS)
+                    
+                    # Convert to RGBA if not already
+                    if image.mode != 'RGBA':
+                        image = image.convert('RGBA')
+                    
+                    return ImageTk.PhotoImage(image)
+            
+            return None
+        except Exception as e:
+            print(f"❌ Error loading local image for {pokemon_name}: {e}")
+            return None
+    
+    def _download_image_from_url_sized(self, pokemon_name, sprite_url, size):
+        """Download a Pokémon sprite image from remote URL with specific size as fallback"""
+        try:
+            print(f"📥 Downloading image for {pokemon_name} from remote URL...")
             response = requests.get(sprite_url, timeout=10)
             response.raise_for_status()
             
@@ -75,7 +142,6 @@ class ImageLoader:
                 # Approach 2: Try to save to temp file and load
                 try:
                     import tempfile
-                    import os
                     with tempfile.NamedTemporaryFile(suffix='.png', delete=False) as tmp:
                         tmp.write(response.content)
                         tmp_path = tmp.name
@@ -96,17 +162,15 @@ class ImageLoader:
                         return None
             
             if image:
-                # Process the image
-                image = image.resize(self.image_size, Image.Resampling.LANCZOS)
+                # Process the image with specified size
+                image = image.resize(size, Image.Resampling.LANCZOS)
                 
                 # Convert to RGBA if not already
                 if image.mode != 'RGBA':
                     image = image.convert('RGBA')
                 
-                photo = ImageTk.PhotoImage(image)
-                self.image_cache[pokemon_name] = photo
-                return photo
+                return ImageTk.PhotoImage(image)
             
         except Exception as e:
-            print(f"❌ Error loading image for {pokemon_name}: {e}")
+            print(f"❌ Error downloading image for {pokemon_name}: {e}")
             return None
