@@ -5,9 +5,16 @@ A Python-based "Guess Who" inspired game where two players try to guess each oth
 ## Features
 
 - **Complete Pokédex**: All Pokémon from the PokéAPI with official sprites
-- **Smart Autocomplete**: Type to search through 1,280+ Pokémon with fuzzy matching
-- **Visual Gameplay**: Uniform grid with properly sized Pokémon sprites
-- **Intuitive Interface**: Clean design with modern UI components
+- **Enhanced Autocomplete**: Type to search through 1,280+ Pokémon with fuzzy matching, featuring:
+  - **Visual Suggestions**: Pokémon sprites displayed alongside names in dropdown
+  - **Smart Filtering**: Real-time search with immediate visual feedback
+  - **Local Image Caching**: Fast loading with pre-downloaded Pokémon images
+- **Manual Grid Setup**: Players can manually select all 24 Pokémon for their grid
+  - **Interactive Grid Builder**: Visual 6x4 grid with autocomplete for each position
+  - **Duplicate Prevention**: Once selected, Pokémon are removed from other autocomplete options
+  - **Visual Feedback**: Selected Pokémon highlighted, empty slots show Pokéballs
+- **Visual Gameplay**: Uniform grid with properly sized Pokémon sprites and names
+- **Intuitive Interface**: Clean design with modern UI components and consistent styling
 - **Cross-platform GUI**: Optimized window interface using tkinter
 - **Two-Player Gameplay**: Alternating turns between players
 - **Interactive Grids**: 6x4 grids of clickable Pokémon buttons for each player
@@ -15,7 +22,7 @@ A Python-based "Guess Who" inspired game where two players try to guess each oth
 - **Multiple Win Conditions**: Win by correct guess or lose by eliminating your target
 - **Generation Selection**: Choose which Pokémon generations to include in the game
 - **Variant Selection**: Include regional variants, Mega evolutions, Gigantamax forms, and more
-- **Pokémon Selection Method**: Choose between randomized or manual selection (manual coming soon)
+- **Flexible Selection**: Choose between randomized grid generation or manual grid setup
 
 ## Requirements
 
@@ -37,11 +44,11 @@ A Python-based "Guess Who" inspired game where two players try to guess each oth
    pip install -r requirements.txt
    ```
 
-3. **First-time setup**: Run the Pokémon data service to fetch all Pokémon data:
+3. **First-time setup**: Run the Pokémon data service to fetch all Pokémon data and download images:
    ```bash
    python3 data_sources/pokemon_data_service.py
    ```
-   This will create a `data_sources/pokemon_data.json` file with all Pokémon names and sprite URLs.
+   This will create a `data_sources/pokemon_data.json` file with all Pokémon names and sprite URLs, and download all Pokémon images to `assets/pokemon_images/` for faster loading.
 
 ## How to Run
 
@@ -49,21 +56,26 @@ A Python-based "Guess Who" inspired game where two players try to guess each oth
 python3 main.py
 ```
 
-**Note**: The first time you play, it may take a moment to download Pokémon sprites from the internet.
+**Note**: The first time you play, the game will load quickly using pre-downloaded Pokémon sprites from the local assets folder.
 
 ## How to Play
 
 1. **Start**: Click the "Start" button on the main screen
 2. **Generation Selection**: Choose which Pokémon generations you want to include in the game
-3. **Game Settings**: Configure variant inclusion and Pokemon selection method
-4. **Player Setup**: Each player enters their name and chooses a Pokémon using the smart autocomplete search
-4. **Gameplay**:
+3. **Game Settings**: Configure variant inclusion and Pokémon selection method (randomized or manual)
+4. **Player Setup**: Each player enters their name and chooses a Pokémon using the enhanced autocomplete search with visual sprites
+5. **Manual Grid Setup** (if selected): 
+   - Each player sets up their 6x4 grid by selecting Pokémon for each position
+   - Use autocomplete with visual previews to choose Pokémon
+   - Selected Pokémon are highlighted and removed from other position options
+   - Confirm button activates only when all 24 positions are filled
+6. **Gameplay**:
    - Players take turns eliminating Pokémon from their opponent's grid
    - Click on opponent's Pokémon sprites to mark them with a red 'X'
    - Click again to unmark (toggle functionality)
    - Use "End Turn" to switch to the other player
-   - Use "Make Guess" to guess the opponent's chosen Pokémon (also with autocomplete search)
-5. **Winning**:
+   - Use "Make Guess" to guess the opponent's chosen Pokémon (with autocomplete search and sprites)
+7. **Winning**:
    - **Win**: Correctly guess the opponent's chosen Pokémon
    - **Lose**: Accidentally eliminate the opponent's chosen Pokémon or make an incorrect guess
 
@@ -72,14 +84,40 @@ python3 main.py
 The game uses the [PokéAPI](https://pokeapi.co/) to provide:
 - **1,280+ Pokémon** from all generations
 - **Official sprite images** for visual gameplay
+- **Local image caching** for instant loading and offline gameplay
 - **Automatic data caching** for faster subsequent plays
 
 ### Updating Pokémon Data
 
-To refresh the Pokémon database with the latest data:
+To refresh the Pokémon database with the latest data and re-download all images:
 ```bash
 python3 data_sources/pokemon_data_service.py
 ```
+
+This will update both the JSON data file and refresh all Pokémon images in the `assets/pokemon_images/` directory.
+
+## Recent Updates
+
+### Version 2.0 - Enhanced Visual Experience & Manual Grid Setup
+
+**Major Features Added:**
+- **Manual Grid Setup**: Players can now manually select all 24 Pokémon for their grid instead of random generation
+- **Visual Autocomplete**: Enhanced autocomplete widget with Pokémon sprite previews
+- **Local Image Caching**: All Pokémon images are pre-downloaded for instant loading
+- **Improved UI/UX**: Consistent styling, better visual feedback, and responsive design
+
+**Technical Improvements:**
+- Enhanced autocomplete with fuzzy search and visual suggestions
+- Duplicate prevention system in manual grid setup
+- Optimized image loading with local asset management
+- Improved grid state management and validation
+- Better error handling and user feedback
+
+**Performance Enhancements:**
+- Instant sprite loading using local image cache
+- Reduced API calls through local asset storage
+- Optimized autocomplete rendering and scrolling
+- Improved memory management for large sprite collections
 
 ## Project Structure
 
@@ -102,10 +140,11 @@ whos-your-pokemon/
 │   │   ├── startup_screen.py
 │   │   ├── game_settings_screen.py
 │   │   ├── player_setup_screen.py
+│   │   ├── pokemon_grid_setup_screen.py  # Manual grid setup
 │   │   ├── game_screen.py
 │   │   └── game_over_screen.py
 │   ├── widgets/              # Custom UI components
-│   │   └── autocomplete_entry.py
+│   │   └── autocomplete_entry.py  # Enhanced with sprite support
 │   └── utils/                # Utility functions
 │       ├── image_loader.py
 │       └── resource_path.py
@@ -119,9 +158,15 @@ whos-your-pokemon/
 │   ├── whos-your-pokemon-logo.png
 │   ├── game-settings-logo.png
 │   ├── player-setup-logo.png
+│   ├── pokemon-grid-setup-logo.png  # Manual grid setup logo
 │   ├── game-over-logo.png
 │   ├── question_mark.png
-│   └── x_icon.png
+│   ├── pokeball.png          # Used in manual grid setup
+│   ├── x_icon.png
+│   └── pokemon_images/       # Local cache of all Pokémon sprites
+│       ├── Pikachu.png
+│       ├── Charizard.png
+│       └── [1,280+ Pokémon images]
 │
 ├── build_tools/              # Build and deployment tools
 │   ├── build_app.py
@@ -149,6 +194,9 @@ whos-your-pokemon/
 - **UI/UX**: Modern responsive design with visual feedback
 - **Data Management**: JSON-based Pokémon data caching
 - **Image Handling**: Pillow for sprite processing and display
+- **Local Asset Management**: Pre-downloaded Pokémon images for optimal performance
+- **Enhanced Autocomplete**: Visual suggestions with sprite previews and fuzzy search
+- **Manual Grid Setup**: Interactive grid builder with duplicate prevention
 
 ## Building Executable
 
@@ -178,11 +226,13 @@ The executable will be created in the `dist/` directory.
 
 This project welcomes contributions! Key areas for enhancement:
 
-- Adding more game modes
+- Adding more game modes and gameplay variations
 - Implementing sound effects and animations
-- Improving UI/UX design
+- Improving UI/UX design and accessibility
 - Adding network multiplayer support
-- Performance optimizations
+- Performance optimizations and code improvements
+- Enhanced visual effects and transitions
+- Additional Pokémon data integration (stats, types, etc.)
 
 ## License
 
