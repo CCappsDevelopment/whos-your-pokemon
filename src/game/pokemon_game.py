@@ -6,7 +6,7 @@ from tkinter import ttk, messagebox
 import random
 
 from ..data import PokemonDataManager
-from ..utils import ImageLoader
+from ..utils import ImageLoader, adjust_window_for_platform, get_platform_info
 from ..screens import (
     StartupScreen, GameSettingsScreen, PlayerSetupScreen, 
     GameScreen, GameOverScreen, PokemonGridSetupScreen
@@ -82,13 +82,39 @@ class PokemonGuessGame:
         self.root = tk.Tk()
         self.root.title("Who's Your Pokémon!")
         
-        # Set window to fullscreen by default
-        self.root.attributes('-fullscreen', True)
+        # Apply platform-specific window adjustments
+        adjust_window_for_platform(self.root)
+        
+        # Set window to fullscreen by default (with platform fallbacks)
+        try:
+            self.root.attributes('-fullscreen', True)
+        except tk.TclError:
+            # Fallback for platforms that don't support -fullscreen
+            platform_info = get_platform_info()
+            if platform_info['is_linux']:
+                try:
+                    self.root.wm_state('zoomed')  # Linux alternative
+                except:
+                    self.root.geometry("1300x800")  # Final fallback
+            else:
+                self.root.geometry("1300x800")  # Default size
+        
         self.root.configure(bg='#3d7dca')
         
         # Allow escape key to close the window and F11 to toggle fullscreen
         self.root.bind('<Escape>', lambda e: self.root.destroy())
         self.root.bind('<F11>', self.toggle_fullscreen)
+        
+        # Add platform-specific key bindings
+        platform_info = get_platform_info()
+        if platform_info['is_macos']:
+            # macOS specific bindings
+            self.root.bind('<Command-q>', lambda e: self.root.destroy())  # Cmd+Q to quit
+            self.root.bind('<Command-w>', lambda e: self.root.destroy())  # Cmd+W to close window
+        elif platform_info['is_windows'] or platform_info['is_linux']:
+            # Windows/Linux specific bindings
+            self.root.bind('<Control-q>', lambda e: self.root.destroy())  # Ctrl+Q to quit
+            self.root.bind('<Alt-F4>', lambda e: self.root.destroy())      # Alt+F4 to quit (Windows standard)
         
         # Load X icon after root window is created
         self.image_loader.load_x_icon()
@@ -554,20 +580,38 @@ class PokemonGuessGame:
         print(f"📊 Filtered to {len(self.filtered_pokemon_list)} Pokémon")
     
     def toggle_fullscreen(self, event=None):
-        """Toggle fullscreen mode"""
-        current_state = self.root.attributes('-fullscreen')
-        self.root.attributes('-fullscreen', not current_state)
+        """Toggle fullscreen mode with cross-platform compatibility"""
+        platform_info = get_platform_info()
         
-        # If exiting fullscreen, set a reasonable window size and center it
-        if current_state:
-            self.root.geometry("1300x800")
-            # Center the window when exiting fullscreen
-            self.root.update_idletasks()
-            width = self.root.winfo_width()
-            height = self.root.winfo_height()
-            x = (self.root.winfo_screenwidth() // 2) - (width // 2)
-            y = (self.root.winfo_screenheight() // 2) - (height // 2)
-            self.root.geometry(f"{width}x{height}+{x}+{y}")
+        try:
+            current_state = self.root.attributes('-fullscreen')
+            self.root.attributes('-fullscreen', not current_state)
+            
+            # If exiting fullscreen, set a reasonable window size and center it
+            if current_state:
+                self.root.geometry("1300x800")
+                # Center the window when exiting fullscreen
+                self.root.update_idletasks()
+                width = self.root.winfo_width()
+                height = self.root.winfo_height()
+                x = (self.root.winfo_screenwidth() // 2) - (width // 2)
+                y = (self.root.winfo_screenheight() // 2) - (height // 2)
+                self.root.geometry(f"{width}x{height}+{x}+{y}")
+                
+        except tk.TclError:
+            # Fallback for platforms that don't support -fullscreen
+            if platform_info['is_linux']:
+                # On some Linux systems, try zoomed state
+                try:
+                    current_state = self.root.wm_state() == 'zoomed'
+                    if current_state:
+                        self.root.wm_state('normal')
+                        self.root.geometry("1300x800")
+                    else:
+                        self.root.wm_state('zoomed')
+                except:
+                    # Final fallback - just maximize
+                    self.root.geometry("1300x800")
 
     def run(self):
         """Start the game"""

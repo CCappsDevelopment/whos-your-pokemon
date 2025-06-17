@@ -3,6 +3,7 @@ Game over screen for Pokemon Guess Game
 """
 import tkinter as tk
 from .base_screen import BaseScreen
+from ..utils import get_large_display_font, get_subtitle_font, adjust_window_for_platform
 
 
 class GameOverScreen(BaseScreen):
@@ -32,7 +33,7 @@ class GameOverScreen(BaseScreen):
         result_label = tk.Label(
             self.container,
             text=result,
-            font=('Arial', 48, 'bold'),
+            font=get_large_display_font(),
             fg='#4CAF50' if 'Wins' in result else '#F44336',
             bg='#3d7dca'
         )
@@ -42,7 +43,7 @@ class GameOverScreen(BaseScreen):
         message_label = tk.Label(
             self.container,
             text=message,
-            font=('Arial', 18),
+            font=get_subtitle_font(),
             fg='#222222',
             bg='#3d7dca'
         )
@@ -52,7 +53,7 @@ class GameOverScreen(BaseScreen):
         new_game_button = tk.Button(
             self.container,
             text="New Game",
-            font=('Arial', 20, 'bold'),
+            font=get_subtitle_font(),
             bg='#ffcb05',
             fg='#222222',
             highlightbackground='#222222',

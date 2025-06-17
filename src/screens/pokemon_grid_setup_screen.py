@@ -5,6 +5,7 @@ import tkinter as tk
 from tkinter import messagebox
 from .base_screen import BaseScreen
 from ..widgets import AutocompleteEntry
+from ..utils import get_title_font, get_subtitle_font, get_grid_font, get_small_font, bind_mousewheel
 
 
 class PokemonGridSetupScreen(BaseScreen):
@@ -65,7 +66,7 @@ class PokemonGridSetupScreen(BaseScreen):
             title_label = tk.Label(
                 self.content_frame,
                 text="Pokemon Grid Setup",
-                font=('Arial', 24, 'bold'),
+                font=get_title_font(),
                 fg='#003a70',
                 bg='#3d7dca'
             )
@@ -75,7 +76,7 @@ class PokemonGridSetupScreen(BaseScreen):
         instruction_label = tk.Label(
             self.content_frame,
             text=f"{player_name}, choose the Pokemon for your grid.",
-            font=('Arial', 16, 'bold'),
+            font=get_subtitle_font(),
             fg='#003a70',
             bg='#3d7dca'
         )
@@ -88,7 +89,7 @@ class PokemonGridSetupScreen(BaseScreen):
         self.confirm_button = tk.Button(
             self.content_frame,
             text="Confirm Grid",
-            font=('Arial', 16, 'bold'),
+            font=get_subtitle_font(),
             bg='#cccccc',  # Disabled color initially
             fg='#222222',
             highlightbackground='#222222',
@@ -152,7 +153,7 @@ class PokemonGridSetupScreen(BaseScreen):
                     chosen_label = tk.Label(
                         position_frame,
                         text="CHOSEN",
-                        font=('Arial', 7, 'bold'),
+                        font=get_grid_font(),
                         fg='#003a70',
                         bg='#3d7dca'
                     )
@@ -295,7 +296,7 @@ class ConstrainedAutocompleteEntry(tk.Frame):
         self.entry = tk.Entry(
             self,
             textvariable=self.var,
-            font=('Arial', 10),
+            font=get_small_font(),
             bg='#cccccc',
             fg='#222222',
             insertbackground='blue',
@@ -360,7 +361,7 @@ class ConstrainedAutocompleteEntry(tk.Frame):
             name_label = tk.Label(
                 item_frame,
                 text=match,
-                font=('Arial', 10),
+                font=get_small_font(),
                 bg='#cccccc',
                 fg='#222222',
                 anchor='w',

@@ -3,6 +3,7 @@ Autocomplete Entry widget for Pokemon Guess Game
 """
 import tkinter as tk
 from tkinter import ttk
+from ..utils import bind_mousewheel, get_entry_font, get_body_font
 
 
 class AutocompleteEntry(tk.Frame):
@@ -22,7 +23,7 @@ class AutocompleteEntry(tk.Frame):
         self.entry = tk.Entry(
             self,
             textvariable=self.var,
-            font=('Arial', 14),
+            font=get_entry_font(),
             bg='#cccccc',
             fg='#222222',
             insertbackground='blue',  # Cursor color - more visible
@@ -91,8 +92,8 @@ class AutocompleteEntry(tk.Frame):
         self.entry.bind('<FocusOut>', self.on_focus_out)
         self.entry.bind('<KeyPress>', self.on_key_press)  # Track typing
         
-        # Mouse wheel scrolling for canvas
-        self.canvas.bind("<MouseWheel>", self.on_mousewheel)
+        # Cross-platform mouse wheel scrolling for canvas
+        bind_mousewheel(self.canvas, self.on_mousewheel_cross_platform)
         
         self.suggestions_visible = False
         self.selecting_from_list = False
@@ -134,9 +135,10 @@ class AutocompleteEntry(tk.Frame):
         
         return matches[:8]  # Limit to 8 suggestions for better UI
         
-    def on_mousewheel(self, event):
-        """Handle mouse wheel scrolling"""
-        self.canvas.yview_scroll(int(-1 * (event.delta / 120)), "units")
+    def on_mousewheel_cross_platform(self, direction):
+        """Handle mouse wheel scrolling cross-platform"""
+        # Scroll the canvas based on direction
+        self.canvas.yview_scroll(-direction, "units")
     
     def create_pokemon_suggestion_item(self, parent, pokemon_name, index):
         """Create a single Pokemon suggestion item with sprite"""
@@ -158,7 +160,7 @@ class AutocompleteEntry(tk.Frame):
         name_label = tk.Label(
             item_frame,
             text=pokemon_name,
-            font=('Arial', 12),
+            font=get_body_font(),
             fg='#222222',
             bg='#cccccc',
             anchor='w',
