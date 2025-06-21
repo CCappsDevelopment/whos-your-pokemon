@@ -615,7 +615,28 @@ class PokemonGuessGame:
 
     def run(self):
         """Start the game"""
-        self.root.mainloop()
+        try:
+            # Ensure the window is visible and bring it to the front
+            self.root.deiconify()  # Make sure window is not minimized
+            self.root.lift()       # Bring window to front
+            self.root.focus_force()  # Force focus to the window
+            
+            # For macOS, try to bring the app to the foreground
+            platform_info = get_platform_info()
+            if platform_info['is_macos']:
+                # Try to bring the app to the foreground on macOS
+                try:
+                    self.root.call('::tk::unsupported::MacWindowStyle', 'style', self.root._w, 'document', 'closeBox fullZoom collapseBox resizable')
+                except:
+                    pass  # Ignore if this fails
+            
+            print("🖥️  Starting main event loop...")
+            self.root.mainloop()
+            print("🖥️  Main event loop ended")
+        except Exception as e:
+            print(f"❌ Error in main loop: {e}")
+            import traceback
+            traceback.print_exc()
 
     def _initialize_default_variants(self):
         """Initialize selected_variants with all available variants by default"""
